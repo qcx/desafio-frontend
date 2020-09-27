@@ -1,0 +1,420 @@
+/*
+    Teste Desenvolvedor Front End QConcursos.com
+    Folha de Estilos
+    Autor: Maychon Douglas
+    @maychondouglas
+    27/09/2020
+*/
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #e8f5ebff;
+    
+
+    /*colors*/
+    --primary-color: #303030ff; /*Footer*/
+    --secondary-color: #8cd1a4ff; /*Botoes*/
+    --quartenary-color: #eeeeeeff; /*Text Presentation*/
+    --fifth-color: #a5a6a9ff; /*Ícones Social-Medias*/
+    --sixth-color: #20232aff; /*Texto*/
+
+    /*Text Sizes*/
+    --low-text: 1.025rem;
+    --med-text: 1.5rem;
+    --high-text: 2rem;
+    --hyper-high-text: 2.5rem;
+}
+ul{ list-style: none; }
+a{ text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.2em; }
+h1{ font-size:  var(--hyper-high-text) }
+h2{ font-size:  var(--high-text) }
+h3{ font-size:  var(--med-text) }
+h4{ font-size:  var(--low-text) }
+p{ 
+    font-size: var(--low-text);
+    line-height: 1.8rem;
+}
+.top-bar a{
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+header a:hover{
+    color: #fff;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+header{
+    background-image: url('../img/background.png');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 100vh;
+    color: var(--quartenary-color);
+}
+header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.6 ;
+}
+.top-bar{
+    height: 10%;
+    align-items: end;
+}
+nav, .presentation-page{
+    position: relative;
+    z-index: 3;
+}
+.my-name{
+    color: var(--quartenary-color);
+}
+.main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    position: initial;
+}
+.main-menu li{
+    margin-left: 0.5rem;
+}
+.main-menu li a{
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--quartenary-color);
+}
+.social-medias{
+    height: 4rem;
+}
+.social-medias a{
+    margin: 0.5rem;
+}
+.social-medias a svg{
+    fill: var(--fifth-color);
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+.social-medias a:hover svg{
+    fill: var(--quartenary-color);
+}
+.presentation-page{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+.presentation-page .presentation-text{
+    height: 20rem;
+}
+footer{
+    background-color: var(--primary-color);
+    height: 15vh;
+    color: var(--terceary-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--quartenary-color);
+}
+.about-section{
+    background-color: #fff;
+}
+section .container{
+    padding: 5rem 0;
+
+}
+.about-section .container{
+
+    color: var(--sixth-color);
+}
+.about-section .container p{
+    margin-bottom: 1rem;
+}
+.section-identifier{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.challenge .content{
+    background-color: #fff;
+    height: auto;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    position: relative;
+}
+.repos-list{
+    padding-top: 3rem;
+    transition: ease 1s;
+}
+.favorites-list{
+    transition: ease 1s;
+    
+}
+.hide{
+    height: 0;
+    opacity: 0;
+    display: none;
+}
+.show{
+    height: auto;
+    opacity: 1;
+    display: initial;
+    
+}
+
+/*Botões*/
+.btn{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px transparent;
+    border-radius: 3px;
+    grid-column: span 1;
+    transition: ease-in-out 0.2s;
+    width: 100%;
+    font-weight: 600;
+}
+.btn-primary{
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.btn-primary:hover{
+    margin-top: -0.2rem;
+    margin-bottom: 0.2rem;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+}
+
+/*Grid Profile*/
+.user-picture{
+    grid-column: span 1;
+    grid-row: 1;
+    transition: ease-in-out 0.3s;
+    width: 70%;
+    border-radius: 100%;
+}
+.profile-link{
+    grid-column: span 1;
+    grid-row: 2;
+    width: 70%;
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 1rem;
+
+}
+.btn-primary{
+    grid-column: span 1;
+    grid-row: 2;
+}
+.info-user{
+    grid-column: span 2;
+    grid-row: 1;
+}
+.info-user h4{
+    line-height: 2rem;
+}
+
+/*Respositories Section*/
+h4{
+    margin-bottom: 1rem;
+}
+.user-github{
+    margin-bottom: 3rem;
+}
+.list-repo li{
+    line-height: 2rem;
+    display: flex;
+    padding: 0 0.5rem;
+}
+.list-repo li a{
+    color: #0b2c15ff;
+    margin: 0.2rem 0;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+}
+.list-repo li a:hover{
+    color: var(--secondary-color);
+}
+.list-repo li:nth-child(odd){
+    background-color: #ccebdbff;
+}
+
+/*Menu Mobile*/
+#check {
+    position: absolute;
+    z-index: 1000000000000;
+    display: none;
+}
+.menu-mobile-botao{
+    height: 45px;
+    width: 45px;
+    border: solid var(--quartenary-color) 2px;
+    border-radius: 3px;
+    display: none;
+}
+.menu-mobile-botao label {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .2s linear;
+}
+.menu-mobile-botao span {
+    width: 25px;
+    height: 2px;
+    top: 20px;
+    left: 7px;
+    position: absolute;
+    background-color: var(--quartenary-color);
+    transition: all .2s linear;
+}
+.menu-mobile-botao span:before {
+    content: '';
+    width: 25px;
+    height: 2px;
+    bottom: -10px;
+    position: absolute;
+    background-color: var(--quartenary-color);
+    transition: all .2s linear;
+}
+.menu-mobile-botao span:after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    top: -10px;
+    position: absolute;
+    background-color: var(--quartenary-color);
+    transition: all .2s linear;
+}
+
+@media(max-width: 900px){
+    .container{
+        padding: 1rem 3rem;
+        position: relative;
+    }
+    section .container, .challenge .container, footer{
+        padding: 3rem 3rem;
+        position: relative;
+    }
+    footer{
+        text-align: center;
+    }
+    .user-github{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-picture{
+        align-self: center;
+    }
+    .profile-link{
+        width: 100%;
+    }
+    .my-name{
+        line-height: 45px;
+    }
+    .challenge .content{
+        width: 100%;
+    }
+    .btn{
+        margin-bottom: 0.1rem;
+    }
+
+    /*Menu Mobile*/
+    .top-bar{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1000;
+        width: 100%;
+        transition: ease-in-out 0.3s;
+    }
+    .top-bar-scroll{
+        background-color: var(--secondary-color);
+    }
+    .menu-mobile-botao{
+        transition: 0.30s ease-in-out;
+        right: 3rem;
+    }
+    .main-menu{
+        position: absolute;
+        right: -50%;
+        top: 0;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        height: 100vh;
+        width: 50%;
+        transition: ease-in-out 0.3s;
+    }
+    .main-menu li{
+        margin: 2rem;
+    }
+    .botao-menu-deslizado{
+        background-color: var(--fifth-color);
+        padding-left: 0;
+        right: 0;
+        margin-right: 50% ;
+        border-radius:  100px 0rem  0rem 100px ;
+    }
+    .menu-mobile-botao {
+        display: block;
+    }
+    .fechar-menu-mobile{
+        display: flex;
+        color: var(--clean-color);
+        height: 10%;
+        width: auto;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    #check:checked ~ label span{
+        background-color: transparent;
+    }
+    #check:checked ~ label span:before{
+        transform: translate(0px, -10px) rotate(-45deg);
+    }
+    #check:checked ~ label span::after{
+        transform: translate(0px, 10px) rotate(45deg);
+    }
+    #check:checked ~ label{
+        border-radius: 100px;
+    }
+    #check:checked ~ .menu{
+        margin-right: 0;
+    }
+    #check:blank ~ .menu{
+        margin-right: -10%;
+    }
+}
