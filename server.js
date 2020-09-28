@@ -10,4 +10,4 @@ app.get('/', (req, res) => {
   res.render(__dirname + '/public/index.html');
 });
 
-app.listen(process.env.PORT || 8070, () => console.log('Listening on port 8080!'));
+app.listen(process.env.PORT || 8080, () => console.log('Listening on port 8080!'));

@@ -34,7 +34,7 @@ function createComponent(element, class, parent,){
 
 ## :cat: Getting Started
 
-Para rodar essa aplicação em sua máquina, você precisa ter uma IDE instalada. Recomendo particularmente o VSCode, coma extensão Live Sass para compilação dos arquivos .scss. Com a IDE installada e preparada, é necessário fazer a também a instalação do Express e do ejs para que a aplicação possa ser hospedada em servidor. Em seu terminal, execute:
+Para rodar essa aplicação em sua máquina, você precisa ter uma IDE instalada. Recomendo particularmente o VSCode, com a extensão Live Sass para compilação dos arquivos .scss. Com a IDE instalada e preparada, é necessário fazer  também a instalação do Express e do ejs para que a aplicação possa ser hospedada em servidor local. Em seu terminal, execute:
 
 ```shell
 npm i express
@@ -57,7 +57,9 @@ Após a execução do comando, a seguinte mensagem deve aparecer em seu terminal
 Listening on port 8080
 ```
 
-Pronto! Você conseguiu rodar a aplicação. Para continuar o desenvolvimento adequadamente, é importante clicar no botão "watch sass" no rodapé do VSCode. Outra opção é a utilização de webpack, que está entre as tasks desse projeto, mas não foi posível no tempo.
+Pronto! Você conseguiu rodar a aplicação. 
+
+Para continuar o desenvolvimento adequadamente, é importante clicar no botão "watch sass" no rodapé do VSCode. Outra opção é a utilização de webpack, que está entre as tasks desse projeto, mas não foi posível no tempo.
 
 ## :fire: Task list
 
