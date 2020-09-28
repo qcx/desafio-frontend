@@ -1,0 +1,35 @@
+@import '../../../../assets/global-styles/mixin';
+
+.button {
+
+    @include displayFlex(row);
+    flex-wrap: wrap;
+
+    button {
+        padding: 10px;
+        margin: 20px 5px 0 5px;
+        text-transform: uppercase;
+        background: none;
+ 
+        font-weight: 600;
+        font-size:  clamp(14px, 1.3vw, 24px);
+        font-family: 'Roboto', sans-serif;
+        color: var(--profile-favs-color);
+        border-radius: 5px;
+        border: 2px solid var(--profile-favs-color);
+
+        cursor: pointer;
+        outline: inherit;
+        transition: 100ms;
+
+        &:hover{
+            color: #6faa7f;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .profile .profileHeader .profileData #repositorios {
+        order: 2;
+    }
+}

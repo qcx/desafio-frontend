@@ -1,69 +1,75 @@
-# Frontend Chalenge - Qconcursos
+# :star: Frontend Challenge - Qconcursos
+> Landing page com integração à API do GitHub feita em ES6 puro.
 
-Olá Dev.
+<div align="center">
+<img src="https://i.ibb.co/nBnYGSZ/mysite.png" height="300px" alt="imagem da versão web"><img src="https://i.ibb.co/8MnpLYJ/mobile.png" height="300px" alt="Imagem da versão mobile">
+</div>
+<br>
+Este projeto foi desenvolvido para candidatura à vaga de desenvolvedor FrontEnd da Qcx. A SPA deveria ser feita sem utilização de frameworks FrontEnd e preferencialmente componentizando a aplicação. Não foi requisitado backend. Realizado em 7 dias, você pode checar o resultado em minha prévia online, deploy feito pelo Heroku devido a utilização de servidor para levantar a aplicação em NodeJS https://qcxconc.herokuapp.com/
 
-Este repositório foi criado para que você possa nos mostrar o que sabe tecnicamente. Esperamos que você nos surpreenda com sua experiência e criatividade.
+## :sparkles: Lighthouse e prioridades durante o desevolvimento
+<div align="center">
+<img src="https://i.ibb.co/7nHzzvb/lighthouse.png" alt="Análise pelo LightHouse">
+</div>
 
-O teste em si, é simples, esperamos que você mostre o que sabe independente de frameworks/libs famosos como React, VueJs e Angular. Então queremos que você utilize Vanilla em tudo, ou tudo o que for possível, ou seja, queremos que você implemente uma solução sem utilizar jQuery, Bootstrap ou afins. Queremos ver sua capacidade de criar algo sem a ajuda de facilitadores como o jQuery ou o Bootstrap. Não o julgaremos mal se você optar por utilizar libs como lodash ou underscore para facilitar sua vida no JS, ou utilizar preprocessadores como SCSS, LESS, Stylus, Babel, etc. Para processar seu código. Até recomendamos que você os utilize. O bom senso será de extrema importância.
+Esse desafio não foi feito em TDD, dada a prioridade em mostrar proeficiência sobre a arquitetura de um projeto componentizado e domínio das tecnologias básicas, além de originalidade na solução. Ainda sim, algumas considerações foram feitas durante a realização, principalmente voltadas para SEO, responsividade e acessibilidade do site. Ressalto a importância desses pontos e trago uma breve análise da prévia online no heroku feita pelo Google Lighthouse. 
 
-Queremos que você nos mostre que consegue "sobreviver" sem Frameworks e tem criatividade suficiente para implementar suas próprias soluções ;)
+Infelizmente, a performace não ficou dentro do ideal de carregamento de página. Talvez, a utilização de uma função universal para gerar componentes fosse uma possível solução. Algo como: 
 
-Vamos listar os pontos chaves que serão utilizados na avaliação do seu teste:
+```shell
+function createComponent(element, class, parent,){
+    let el = document.createElement(element);
+    let parent = document.querySelector(parent);
+    el.classList.add(class)
+    parent.appendChild(el) || parent.innerHTML = el 
+}
+```
 
-Avaliaremos se:
+## :boom: Tecnologias utilizadas
 
-* O Dev utilizou HTML, JS e CSS. Com ou sem pré-processadores.
-* O desafio foi implementado sem a necessidade de frameworks ou libs como jQuery, Bootstrap, React, Angular, VueJs...
-* O Dev tem ou não a capacidade de arquitetar uma aplicação do zero.
-* O Dev componentizou e organizou o código para que ele seja fácil de entender e de manter.
-* O Dev utilizou ferramentas como Webpack, Gulp, Grunt, SCSS, Babel ou afins para facilitar e acelerar o desenvolvimento (Não é obrigatório).
-* O Dev se preocupou em organizar o CSS, pois acreditamos que o CSS é tão importante quanto o JS. É sério.
+* HTML5
+* CSS3
+* SCSS
+* ES6
 
-***ATENÇÃO**: Não estamos esperando que você seja um Ninja e que vá surpreender em todos os quesitos. Estamos muito mais interessados em saber qual a sua capacidade como desenvolvedor. Você pode por exemplo ser muito bom com CSS e não muito bom com JS, ou o contrário. Isso não quer dizer que você não esteja apto para ser contratado. Queremos é saber o quão esforçado você é. Então use e abuse do bom senso. Se você acha que algo é importante de ser mostrado, mostre. É a sua chance de mostrar o que você sabe :)
+## :cat: Getting Started
 
-Se tiver qualquer dúvida sobre o desafio, abra uma Issue neste mesmo repositório. Responderemos o mais rápido possível.
+Para rodar essa aplicação em sua máquina, você precisa ter uma IDE instalada. Recomendo particularmente o VSCode, coma extensão Live Sass para compilação dos arquivos .scss. Com a IDE installada e preparada, é necessário fazer a também a instalação do Express e do ejs para que a aplicação possa ser hospedada em servidor. Em seu terminal, execute:
 
-### Então, vamos ao teste, finalmente!
+```shell
+npm i express
+```
+Para o ejs:
 
-Você terá que implementar uma landing page que possui uma feature para listar repositórios de um perfil qualquer do Github. Se acha que consegue fazer algo melhor em relação ao design, faça. Se acha que deve seguir exatamente como está no design, fique à vontade. O importante é que você mostre os seus conhecimentos da melhor forma possível, levando em conta o tempo que você terá para implementar este desafio.
+```shell
+npm i ejs
+```
 
-Além de implementar o design, você deve mostrar que consegue consumir uma API Rest. Escolhemos a [API do Github](https://developer.github.com/v3/) para isso. Fique à vontade para utilizar qualquer lib para acessar estes dados.
+Por padrão, essa aplicação é rodada na portar 8080 em sua máquina local. Para isso, execute o comando:
 
-Tasks:
+```shell
+node server.js
+```
 
-* Implementar o design mostrando sua experiência com HTML, JS e CSS.
-* Implementar a funcionalidade de listar os repositórios e os repositórios favoritos de um perfil qualquer do Github.
-* Abrir um Pull Request para este repositório quando você terminar de implementar o desafio.
+Após a execução do comando, a seguinte mensagem deve aparecer em seu terminal:
 
-Observações:
+```shell
+Listening on port 8080
+```
 
-* Os links do menu devem apenas fazer scroll da página para suas respectivas seções quando clicados.
-* Você não precisa implementar páginas extras para os links que estão no design.
-* Os textos da landing page podem ser textos aleatórios como "Lorem ipsum".
+Pronto! Você conseguiu rodar a aplicação. Para continuar o desenvolvimento adequadamente, é importante clicar no botão "watch sass" no rodapé do VSCode. Outra opção é a utilização de webpack, que está entre as tasks desse projeto, mas não foi posível no tempo.
 
-Dicas:
+## :fire: Task list
 
-* Faça o melhor que você pode no tempo que tem para entregar.
-* Quanto mais coisas legais você conseguir mostrar, melhor.
-* Relaxe, não esperamos que você seja um Ninja, mas se for, ótimo :)
-* Se divirta, pois esperamos que você faça isso no dia a dia caso seja contratado :)
-
-Será considerado como plus:
-
-* Implementar o design de forma responsiva.
-* Utilizar Webpack.
-* Utilizar SCSS.
-* Utilizar ES6+.
-* Componentizar a aplicação <3.
-
-Segue o design:
-
-Landing Page:
-![Alt text](desafio-front.jpg?raw=true "Landing Page")
-
-Listagem de repositórios:
-![Alt text](desafio2.jpg?raw=true "Feature")
-
-Entrega:
-
-Após finalizar o teste você pode nos enviar para selecao@qcx.com.br com o link do repositório e também pode enviar email para gente caso tenha dúvidas. Entendemos que o dia-a-dia pode ser corrido por isso não estipulamos um prazo, estabelecemos 7 dias como padrão mas caso você não consiga fazer nesses 7 dias não tem problema, preferimos que você tenha tempo para pensar na sua solução do que fazer algo com pressa de entregar.
+- [x] Utilização de HTML5, CSS3 e JS puro
+- [x] Desenvolvimento em ES6+
+- [x] Desenvolvimento em SCSS
+- [x] Componentização da aplicação
+- [x] Integração com API do GitHub
+- [x] Acessibilidade e SEO
+- [x] Manipulação do DOM e domínio de condicionais
+- [x] Animações
+- [x] Responsividade/compatibilidade com diversos dispositivos
+- [ ] Utilização de WebPack 
+- [ ] Utilização de Babel
+- [ ] Criação de função universal para criação de componentes

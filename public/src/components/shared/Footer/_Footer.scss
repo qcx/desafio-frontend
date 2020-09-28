@@ -1,0 +1,23 @@
+@import '../../../../assets/global-styles/mixin';
+
+.footer {
+
+    @include displayFlex(column);
+
+    height: 70px;
+    background-color: var(--background-green-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.705);
+
+    h4 {
+        color: var(--title-color);
+        font-size:  clamp(14px, 1vw, 16px);
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 550px){
+    .footer {
+        padding: 10%;
+        text-align: center;
+    }
+}

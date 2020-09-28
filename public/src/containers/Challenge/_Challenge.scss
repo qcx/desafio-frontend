@@ -1,0 +1,19 @@
+@import '../../../assets/global-styles/mixin';
+
+.challenge {
+    @include displayFlex(column);
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--profile-background-repo);
+
+    .profile {
+        width: 90%;
+        max-width: 960px;
+
+        border-radius: 5px;
+        background-color: #FFF;  
+        box-shadow: 0px 0px 14px -7px rgba(0, 0, 0, 0.521);
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../../assets/global-styles/mixin';
+
+.about {
+    @include displayFlex(column);
+
+    width: 100vw;
+    height: 100%;
+    padding: 50px;
+    background-color: var(--background-gray-color);
+
+    article {
+        height: 100%;
+
+        width: 100%;
+        max-width: 1000px;
+        overflow: auto;
+        padding: 0 20px 0 20px;
+        transform: translateY(-60px);
+
+        text-align: justify;
+
+        h3 {
+            color: var(--footer-color);
+            font-size:  clamp(26px, 1.5vw, 36px);
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            color: var(--about-color);
+            font-size: clamp(14px, 1.3vw, 22px);
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    section#about.about {
+        padding: 15px;
+    }
+}

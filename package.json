@@ -1,0 +1,32 @@
+{
+  "name": "desafio-frontend",
+  "version": "1.0.0",
+  "description": "Desafio realizado para vaga frontend do QCX.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianasmmattos/desafio-frontend.git"
+  },
+  "keywords": [
+    "es6",
+    "scss",
+    "desafio",
+    "frontend",
+    "landing",
+    "page"
+  ],
+  "author": "Mariana Mattos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marianasmmattos/desafio-frontend/issues"
+  },
+  "homepage": "https://github.com/marianasmmattos/desafio-frontend#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../../assets/global-styles/mixin';
+
+.profileHeader {
+    
+    @include displayFlex(row);
+
+    padding: 30px;
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        min-width: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 14px -7px rgba(0,0,0,0.75);
+    }
+
+    .profileIntro {
+        @include displayFlex(column);
+        width: 35%;
+        text-align: center;
+        order: -1;
+
+        a {
+            margin-top: 10px;
+        }
+
+        h4{
+            font-size: clamp(12px, 1.2vw, 18px);
+            text-transform: uppercase;
+            color: var(--profile-color);
+        }
+    }
+
+    .profileData {
+        
+        @include displayFlex(column);
+        width: 100%;
+        padding-left: 5%;
+        align-items: unset;
+
+        h4{
+            font-size: clamp(16px, 1.5vw, 24px);
+            line-height: 1.5;
+            color: var(--profile-color);
+        }
+    }
+}
+
+
+@media (max-width: 550px){
+    .profile .profileHeader {
+        @include displayFlex(column);
+    
+        .profileData {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .profile .profileHeader .profileData {
+        text-align: center;
+    }
+}

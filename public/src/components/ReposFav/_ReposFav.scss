@@ -1,0 +1,33 @@
+div.repos.list {
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 15px;
+
+    h3 {
+        margin: 10px;
+        margin-left: 15px;
+
+        font-size: clamp(16px, 1.2vw, 22px);
+        font-weight: 500;
+        color: var(--profile-color);
+    }
+}
+
+p.repos{
+    padding: 10px;
+    margin: 0 15px 0 15px;
+
+    font-size:  clamp(14px, 1.2vw, 22px);
+    color: var(--profile-color);
+}
+
+p.repos.green {
+    background-color: #84ca98ad;
+}
+
+@media (max-width: 580px){
+    div.repos.list {
+        max-height: 100px; 
+    }
+}
