@@ -11,18 +11,21 @@ Este projeto foi desenvolvido para candidatura à vaga de desenvolvedor FrontEnd
 <div align="center">
 <img src="https://i.ibb.co/7nHzzvb/lighthouse.png" alt="Análise pelo LightHouse">
 </div>
-
+<br>
 Esse desafio não foi feito em TDD, dada a prioridade em mostrar proeficiência sobre a arquitetura de um projeto componentizado e domínio das tecnologias básicas, além de originalidade na solução. Ainda sim, algumas considerações foram feitas durante a realização, principalmente voltadas para SEO, responsividade e acessibilidade do site. Ressalto a importância desses pontos e trago uma breve análise da prévia online no heroku feita pelo Google Lighthouse. 
 
 Infelizmente, a performace não ficou dentro do ideal de carregamento de página. Talvez, a utilização de uma função universal para gerar componentes fosse uma possível solução. Algo como: 
 
 ```shell
-function createComponent(element, class, parent,){
-    let el = document.createElement(element);
-    let parent = document.querySelector(parent);
-    el.classList.add(class)
-    parent.appendChild(el) || parent.innerHTML = el 
+function createElement(element, parent, clss, content){
+  let el = document.createElement(element)
+  let father = document.querySelector(parent)
+  el.classList.add(clss)
+  father.appendChild(el)
+  el.innerHTML = content
 }
+
+createElement('div', '#hello', 'funciona', 'conteudo')
 ```
 
 ## :boom: Tecnologias utilizadas
@@ -74,4 +77,5 @@ Para continuar o desenvolvimento adequadamente, é importante clicar no botão "
 - [x] Responsividade/compatibilidade com diversos dispositivos
 - [ ] Utilização de WebPack 
 - [ ] Utilização de Babel
-- [ ] Criação de função universal para criação de componentes
+- [x] Criação de função universal para criação de componentes
+- [ ] Utilização da função universal no projeto
