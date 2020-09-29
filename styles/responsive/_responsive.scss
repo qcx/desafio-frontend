@@ -1,0 +1,116 @@
+
+@media (max-width: 700px) {
+    #profile {
+        display: block;
+    }
+}
+
+
+@media (min-width: 500px) and (max-width: 620px) {
+    .introducao {
+        font-size: 0.80em;
+    }
+    .menu-logo {
+        font-size: 1em;
+
+    }
+    .menu-nav {
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    .desafio h2 {
+        padding: 20px 10px;
+    }
+
+    .desafio input {
+        width: 100%;
+        height: 4rem;
+        margin: 0 auto;
+    }
+   
+}
+
+
+@media (min-width: 400px) and (max-width: 500px){
+
+    .menu-logo {
+        margin: 0 auto;
+    }
+
+    .menu-nav {
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+    .introducao {
+        font-size: 0.60em;
+        padding: 60px 10px 10px 10px;
+    }
+    .sobre {
+        padding: 60px 10px;
+    }
+    
+    .sobre h2 {
+        margin-bottom: 60px;
+    }
+
+
+
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+
+    .introducao {
+        
+        padding: 40px 10px 10px 10px;
+        h1 {
+            font-size: 3rem;
+        }
+        span {
+            font-size: 2.5rem;
+        }
+    }
+
+    .menu-logo {
+        margin: 0 auto;
+    }
+
+    .menu-nav {
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+
+    .menu-nav li:nth-child(n + 2) {
+        margin-left: 25px;
+    }
+
+
+   
+
+
+}
+
+@media(max-width:320px) {
+    .introducao{
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+        span {
+            font-size: 2rem;
+        }
+    }
+
+    .title-repo-list {
+        a {
+            font-size: 1.2em;
+        }
+        
+    }
+
+
+}
+

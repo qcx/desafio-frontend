@@ -1,0 +1,46 @@
+    .desafio {
+
+        h2 {
+            font-size: 3em;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 10px;
+            margin-bottom: 40px;
+            color: $base-color_white;
+            font-weight: 300;
+    }
+
+    h2:after {
+        content:"";
+        display: block;
+        width:150px;
+        height:5px;
+        background:$primary-color;
+        margin-top: 5px;
+        }
+        .desafio-title {
+            background: url('/img/desafio-bg.png') 100% center no-repeat;
+
+            padding: 50px 0;
+        }
+        .repositorio {
+            margin-top: -60px;
+
+            #repo-form {
+                padding: 20px ;
+            }
+        }
+
+        input {
+            width: 100%;
+            height: 5.6rem;
+            margin-top: 0.8rem;
+            border-radius: 0.8rem;
+            background: $base-color_white;
+            border: 1px solid $base-color_gray;
+            outline: 0;
+            padding: 0 1.6rem;
+            font: 1.2rem Lato;
+        }
+        
+    }

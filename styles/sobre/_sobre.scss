@@ -1,0 +1,25 @@
+.sobre {
+    padding: 100px 10px;
+    
+    h2 {
+        margin-bottom: 60px;
+        font-size: 3em;
+        font-weight: 300;
+    }
+
+    h2:after {
+        content:"";
+        display: block;
+        width:90px;
+        height:5px;
+        background:$primary-color;
+        margin-top: 5px;
+        }
+
+    p {
+        
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+
+}

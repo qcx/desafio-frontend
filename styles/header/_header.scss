@@ -1,0 +1,54 @@
+.menu { 
+    padding: 15px 0;
+    @include flexCenter(row);
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+        color: $base-color_white;
+    }
+}
+
+.menu-logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 10px; // gutter
+}
+
+.menu-nav {
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    a {
+        font-size: 1.125em;
+        display: block;
+        padding: 10px;
+        color: $base-color_white;
+        
+}
+
+    .active {
+        color: $base-color_white;
+        font-weight: 500;
+    }
+    .active:after {
+        content:"";
+        display: block;
+        width:40px;
+        height:3px;
+        background: $black-color;
+        margin-top: 5px;
+        }
+
+    li:nth-child(n + 2) {
+        margin-left: 50px;
+    }
+
+    a:hover {
+        color: $black-color;
+    }
+    
+}
