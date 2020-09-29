@@ -181,7 +181,7 @@
 
 @media (max-width: 350px) {
   .menu nav ul li:nth-child(1) a {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -352,10 +352,10 @@
 
 @media (max-width: 350px) {
   .home .content .txt .homeTitle {
-    font-size: 24px;
+    font-size: 18px;
   }
   .home .content .txt .homeSubTitle {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -424,14 +424,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  height: 90%;
   width: 100vw;
   background-color: var(--profile-background-repo);
 }
 
 .challenge .profile {
   width: 90%;
+  max-height: 90%;
   max-width: 960px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background-color: #FFF;
   -webkit-box-shadow: 0px 0px 14px -7px rgba(0, 0, 0, 0.521);
@@ -658,6 +661,12 @@ p.repos.green {
   .footer {
     padding: 10%;
     text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

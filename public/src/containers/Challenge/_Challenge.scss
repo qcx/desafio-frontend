@@ -3,14 +3,18 @@
 .challenge {
     @include displayFlex(column);
 
-    height: 100vh;
+    height: 90%;
     width: 100vw;
 
     background-color: var(--profile-background-repo);
 
     .profile {
         width: 90%;
+        max-height: 90%;
         max-width: 960px;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
 
         border-radius: 5px;
         background-color: #FFF;  
