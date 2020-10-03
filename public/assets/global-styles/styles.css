@@ -431,10 +431,10 @@
 
 .challenge .profile {
   width: 90%;
-  max-height: 90%;
+  max-height: 100%;
   max-width: 960px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border-radius: 5px;
   background-color: #FFF;
   -webkit-box-shadow: 0px 0px 14px -7px rgba(0, 0, 0, 0.521);
@@ -628,6 +628,12 @@ p.repos.green {
 @media (max-width: 580px) {
   div.repos.list {
     max-height: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  div.repos.list {
+    max-height: 60px;
   }
 }
 
