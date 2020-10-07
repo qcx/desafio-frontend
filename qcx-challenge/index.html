@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Fonte-externa : Open Sans Condensed -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo">
+            <a href="#">Lucas Amado</a>
+          </li>
+          <li class="opcoes" id="home">
+            <a href="#home">Home</a>
+          </li>
+          <li class="opcoes">
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li class="opcoes">
+            <a href="#desafio">Desafio</a>
+          </li>
+          <li class="btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="bg-principal" class="panel-principal">
+        <div class="overlay"></div>
+        <div class="title">Desenvolvedor Front End</div>
+        <!--<div class="sub-title">Desafio Qconcursos.com</div>-->
+        <div class="sub-title">
+          Desafio
+          <span>
+            <a href="https://www.qconcursos.com/">
+              <img id="logo-qc" src="img/logo-qc.svg" alt="Logo Qc" />
+              Qconcursos.com
+            </a>
+          </span>
+        </div>
+
+        <div class="row-icons">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/instagram-brands.svg" alt="Logo Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/linkedin-brands.svg" alt="Logo Linkedin" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/github-brands.svg" alt="Logo Github" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end bg-principal-->
+      <div class="panel-sobre" id="sobre">
+        <div class="box-sobre">
+          <div class="title-sobre">Sobre</div>
+          <div class="texto-sobre">
+            <p>Olá, meu nome é Lucas!</p>
+
+            <p>
+              Sou uma pessoa apaixonada pela área de desenvolvimento web (tanto front end quanto back end),
+              gosto muito de investir meu tempo em desenvolver respostas através de linhas de códigos. 
+              Sou aficionado por tecnologia, perseverante, dedicado, empenhado e persistente; ou seja, 
+              sou um programador.
+            </p>
+            <p>
+              Me formei em Análise e Desenvolvimento de Sistemas e estou terminando minha pós-graduação na 
+              área de Desenvolvimento de Aplicações WEB. No meu tempo livre tenho participado de bootcamps, 
+              aproveitado a minha família, trabalhando em projetos pessoais para aperfeiçoar
+              o que aprendo e (é claro) estudo muito, procurando sempre absorver e tentar aplicar da melhor maneira
+              aquilo que estudo.
+            </p>
+            <p>
+              Logo abaixo você pode conferir alguns dos meus repositórios em que passo bastante tempo desenvolvendo
+              páginas simples, desafios pessoais e até mesmo aplicações mais elaboradas.
+              Não sou muito apegado a uma linguagem de programação apenas, acredito que a linguagem é uma ferramenta 
+              para alcançarmos os nossos objetivos, portanto acredito que posso me empenhar e aprender qualquer linguagem para
+              desenvolver o que é necessário e entregar resultados.
+            </p>
+          </div>
+        </div>
+        <!-- end box-sobre -->
+      </div>
+      <!-- end panel-sobre -->
+
+      <div class="panel-desafio" id="desafio">
+        <div class="box-desafio">
+          <div class="title-desafio">Desafio</div>
+          <div class="box-github">
+            <div class="box-data">
+              <div class="profile">
+                <div class="img-profile">
+                  <img id="imagem" alt="Imagem Profile" />
+                </div>
+                <a id="ref-link">Visitar Perfil</a>
+              </div>
+              <div class="info">
+                <div class="output">
+                  <p>Repositórios : <span id="repositorios"></span></p>
+                  <p>Seguidores : <span id="seguidores"></span></p>
+                  <p>Seguindo : <span id="seguindo"></span></p>
+                </div>
+                <div class="buttons">
+                  <a id="btnRepositorio">Ver repositórios</a>
+                  <a id="btnFavorito">Ver favoritos</a>
+                </div>
+              </div>
+              <!-- end info -->
+            </div>
+            <div class="box-repo">
+              <!-- box-repositorio -->
+              <table id="table-data"></table>
+            </div>
+            <!-- end box-repositorio -->
+          </div>
+          <!-- end box-github -->
+        </div>
+        <!-- end box-desafio -->
+      </div>
+      <!-- end panel-desafio -->
+    </main>
+
+    <footer>
+      <p>
+        Desafio Desenvolvedor Front
+        <a href="https://qconcursos.com">
+          <span>
+            <img src="img/logo-qc.svg" alt="Logo qc" />
+          </span>
+          Qconcursos.com
+        </a>
+      </p>
+    </footer>
+
+    <!-- Script scroll barra de navegação -->
+    <script src="js/nav.js"></script>
+    <!-- Script requisições e rendereizações-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
