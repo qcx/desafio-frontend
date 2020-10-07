@@ -1,0 +1,19 @@
+To do
+
+[x] Prototipação e Planejamento
+[x] Barra de Navegação
+[x] Page-Principal
+[x] Sobre
+[x] Layout - boxDesafio
+[x] boxDesafio -> boxInfo + boxRepo
+[x] Footer
+[x] Alterar Barra de Navegação da tabela - eixo Y (scroll)
+[x] Símbolo Qconcursos Page-Principal
+[x] Efeito no Menu em dispositivos menores
+[x] Moldura da tabela
+[x] Lógica para realizar as requisições
+[x] Separação das funções
+[x] Realizar renderizações
+[-] Box Shadown boxDesafio // Sem necessidade
+[z] Conteúdo - Sobre
+[x] Utilizar offsetTop ao clicar nas opções acima
