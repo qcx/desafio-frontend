@@ -67,3 +67,24 @@ Listagem de repositórios:
 Entrega:
 
 Após finalizar o teste você pode nos enviar para selecao@qcx.com.br com o link do repositório e também pode enviar email para gente caso tenha dúvidas. Entendemos que o dia-a-dia pode ser corrido por isso não estipulamos um prazo, estabelecemos 7 dias como padrão mas caso você não consiga fazer nesses 7 dias não tem problema, preferimos que você tenha tempo para pensar na sua solução do que fazer algo com pressa de entregar.
+
+# Solução do desafio QConcursos.
+
+- Foi realizada a solução do desafio QConcursos de acordo com as instruções iniciais deste README.md
+
+- Para rodar o projeto em ambiente de desenvolvimento utilize o comando "npm run dev" no diretório raiz do projeto e abra o arquivo index.html na pasta dist.
+
+- Para rodar o projeto preparando-o para o ambiente de produção utilize o comando "npm run prd" no diretório raiz do projeto e abra o arquivo index.html na pasta dist.
+
+- Para rodar o projeto em um ambiente de servidor local utilize o comando "node server.js" no diretório raiz do projeto e acesse em seu navegador o endereço http://localhost:3000/home .
+
+# Tecnologias utilizadas no projeto
+
+- ES6 (Utilizando o recurso de desestruturação de objetos)
+
+- SASS (SCSS)
+
+- Webpack para geração dos arquivos .js e .css na pasta dist e também para realizar a configuração dos ambientes de desenvolvimento e de produção.
+
+- Express JS para configuração do servidor local
+ 

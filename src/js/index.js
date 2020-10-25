@@ -1,79 +1,163 @@
-require('../styles/index.css')
-(function(){
+'use strict'
+import _, { identity } from 'lodash';
+import * as gitHubService from './github-services';
+import swal from 'sweetalert';
 
-    const url = "https://api.github.com/users";
-    const profileTag = document.getElementById("profile")
+
+
+
+
+  // document.getElementById('primeira-sessao').style.backgroundImage = "url('dist/images/home2.jpg')";
+
+  const btnRepositorios = document.getElementById("buscar-repositorio");
+  const btnRepositoriosFavoritos = document.getElementById("buscar-repositorio-favorito");
+
+  btnRepositorios.addEventListener('click',function(){
+
+    const user = document.getElementById("input-profile-valor").value;
+
+    const buscarUser = gitHubService.buscarUsuario(user);
+    const buscarRepos = gitHubService.buscarRepositorios(user);
+
+    buscarUser.addEventListener("loadend",function(){
+      if(this.status === 200){
+
+
+         console.log(this.responseText);
+         const response = JSON.parse(this.responseText);
+         const {avatar_url,public_repos,followers,following} = response;
+         document.getElementById("foto-profile").style.backgroundImage = `url('${avatar_url}')`;
+         document.getElementById("qtd-seguidores").innerHTML = followers;
+         document.getElementById("qtd-seguindo").innerHTML = following;
+         document.getElementById("qtd-repositorios").innerHTML = public_repos;
+
+        
+      }
+      else{
+        swal("Perfil não encontrado.","Tente novamente!");
+      }
+
+    });
     
-    async function getUsers(user){
+    buscarRepos.addEventListener("loadend",function(){
+      if(this.status === 200){
 
-        const profileResponse = await fetch(`${url}/${user}`)
-        const repoResponse = await fetch(`${url}/${user}/repos`)
-        const starredResponse = await fetch(`${url}/${user}/starred`) 
-        const profile = await profileResponse.json()
-        const repos = await repoResponse.json()
-        const starred =  await starredResponse.json()
-        return {profile, repos, starred}
-    }
+         console.log(this.responseText);
+         const response = JSON.parse(this.responseText);
 
-    function showProfile(user){
-        console.log(user)
-        profileTag.innerHTML = `
-            <div id="git-data-container">
-                <div id="git-data-leftside">
-                    <img id="github-avatar" src="${user.avatar_url}" width="150px" height="150px" style="border-radius:100%"/>
-                </div>
+         let table_repos = document.getElementById("tabela-lista-repositorios-id").style.visibility = 'visible';
+          document.getElementById("terceira-sessao-repositorios-id").style.display = 'block';
 
-                <div id="git-data-rightside">
-                        <p id="Repositories">Repositorios: ${user.public_repos} </p>
-                        <p id="Followers">Seguidores: ${user.followers}</p>
-                        <p id="Following">Seguindo: ${user.following}</p>
-                            <div id="repos-container"></div>
-                            <div id ="stars-container"></div>
-                </div>
-            </div>
-        `;
-    }
+          document.getElementById("titulo-repositorios-2").style.display = 'none';
+          document.getElementById("titulo-repositorios-1").style.display = 'block';
 
-    function showRepos(repos){
-        let output="";
-        repos.forEach(repo => {
-            output +=  `
-                <ul style="list-style-type:none">
-                    <li>${repo.name}</li>
-                </ul>
-            `
-        })
-        document.getElementById("repos-container").innerHTML = output
-    }
 
-    function showStarred(starred){
-        let output="";
-        starred.forEach(star => {
-            output +=  `
-                <ul style="list-style-type:none">
-                    <li>${star.full_name}</li>
-                </ul>
-            `
-        })
-        document.getElementById("stars-container").innerHTML = output
-    }
- 
-    const search = document.getElementById("buscar-usuario")
-    search.addEventListener("keypress", (e) => {
-        if(e.key === "Enter"){ 
-            const user = e.target.value
-            if(user.length > 0){
-                getUsers(user)
-                .then(res => {
-                    showProfile(res.profile);
-                    showRepos(res.repos);
-                    showStarred(res.starred)
-                })
-            }
+          var linhasTbody = document.getElementById("tabela-lista-repositorios-id").tBodies.length;
+
+          if(linhasTbody > 0){
+
+            var oldTBody = document.getElementById("tbody-repositorios");
+            document.getElementById("tabela-lista-repositorios-id").removeChild(oldTBody);
+
+          }
+
+          var tbody = document.createElement("tbody");
+          tbody.setAttribute("id","tbody-repositorios");
+          response.forEach(element => {
+
+            let tr = document.createElement("tr");
+            let td = document.createElement("td");
+            td.innerHTML = element.name;
+
+            tr.appendChild(td);
+            tbody.appendChild(tr);
+        });
+        document.getElementById("tabela-lista-repositorios-id").appendChild(tbody);
+
+      }
+      else{
+        swal("Perfil não encontrado.","Tente novamente!");
+      }
+
+    });
+
+
+    buscarUser.send();
+    buscarRepos.send();
+
+  });
+
+  btnRepositoriosFavoritos.addEventListener('click',function(){
+
+    const user = document.getElementById("input-profile-valor").value;
+
+    const buscarUser = gitHubService.buscarUsuario(user);
+    const buscarRepositoriosFavoritos = gitHubService.buscarRepositoriosFavoritos(user);
+
+    buscarUser.addEventListener("loadend",function(){
+      if(this.status === 200){
+        
+        console.log(this.responseText);
+        const response = JSON.parse(this.responseText);
+        const {avatar_url,public_repos,followers,following} = response;
+        document.getElementById("foto-profile").style.backgroundImage = `url('${avatar_url}')`;
+        document.getElementById("qtd-seguidores").innerHTML = followers;
+        document.getElementById("qtd-seguindo").innerHTML = following;
+        document.getElementById("qtd-repositorios").innerHTML = public_repos;
+
+      }
+      else{
+        swal("Perfil não encontrado.","Tente novamente!");
+      }
+
+    });
+    
+    buscarRepositoriosFavoritos.addEventListener("loadend",function(){
+      if(this.status === 200){
+            
+        console.log(this.responseText);
+        const response = JSON.parse(this.responseText);
+
+        let table_repos = document.getElementById("tabela-lista-repositorios-id").style.visibility = 'visible';
+        document.getElementById("terceira-sessao-repositorios-id").style.display = 'block';
+
+        document.getElementById("titulo-repositorios-2").style.display = 'block';
+        document.getElementById("titulo-repositorios-1").style.display = 'none';
+
+        var linhasTbody = document.getElementById("tabela-lista-repositorios-id").tBodies.length;
+
+        if(linhasTbody > 0){
+
+           var oldTBody = document.getElementById("tbody-repositorios");
+           document.getElementById("tabela-lista-repositorios-id").removeChild(oldTBody);
+           
         }
-    })
-})()
-    
+
+         var tbody = document.createElement("tbody");
+         tbody.setAttribute("id","tbody-repositorios");
+         response.forEach(element => {
+
+           let tr = document.createElement("tr");
+           let td = document.createElement("td");
+           td.innerHTML = element.name;
+
+           tr.appendChild(td);
+           tbody.appendChild(tr);
+           // table_repos.appendChild(td);
+       });
+       document.getElementById("tabela-lista-repositorios-id").appendChild(tbody);
+
+      }
+      else{
+        swal("Perfil não encontrado.","Tente novamente!");
+      }
+
+    });
+
+    buscarUser.send();
+    buscarRepositoriosFavoritos.send();
+
+  });
 
 
   

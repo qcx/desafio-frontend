@@ -1,0 +1,1319 @@
+$cor-fundo-segunda-sessao:rgb(252, 252, 252);
+$cor-fundo-terceira-sessao:rgb(183, 237, 222);
+$cor-botao-terceira-sessao:rgb(75, 238, 192);
+$cor-fundo-footer:rgb(61, 61, 61);
+$cor-font-primeira-sessao:rgb(255, 255, 255);
+$cor-font-titulo-primeira-sessao:#FA5E0A;
+$estilo-font-primeira-sessao:normal;
+$familia-font-primeira-sessao:system-ui;
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.links-dentro-de-textos{
+    display: contents;
+}
+
+.lista-primeira-sessao{
+    color: $cor-font-primeira-sessao;
+    display: inline;
+    padding: 50px;
+    font-family: fantasy;
+    font-style: normal;
+}
+
+.lista-formularios{
+    color: $cor-font-primeira-sessao;
+    display: block;
+    font-style: normal;
+    font-family: system-ui;
+    color:#5f9ea0;
+    font-size: x-large;
+    padding: 15px;
+}
+
+.lista-formularios-coluna-2{
+    color: $cor-font-primeira-sessao;
+    display: table-cell;
+    font-style: normal;
+    font-family: system-ui;
+    color: #5f9ea0;
+    font-size: x-large;
+    padding: 15px;
+}
+
+.links-primeira-sessao:any-link{
+    color:white;
+}
+
+.btn-repositorio{
+
+    background-color: white;
+    color:$cor-botao-terceira-sessao;
+    border: 2px solid $cor-botao-terceira-sessao; 
+    font-family: system-ui;
+}
+
+.tabela-lista-repositorios{
+    border-collapse: collapse;
+    font-family: monospace;
+    border-spacing: 0;
+    width: 100%;
+    tr,td{
+        text-align: left;
+        padding: 16px;
+        font-size: x-large;
+        
+    }
+   
+    tr:nth-child(even) {
+        background-color:#b7edde;
+        color: white;
+    }
+
+    tr:nth-child(odd) {
+        background-color:white;
+        color: #5f9ea0;
+    }
+}
+
+.row-table-repositorios{
+    width: 100%;
+}
+
+.titulo-table-repositorios{
+    color:#5f9ea0;
+    font-family: system-ui;
+}
+
+.titulo-table-repositorios-2{
+    color:#5f9ea0;
+    font-family: system-ui;
+    display: none;
+}
+
+#input-profile-valor{
+    border-style: solid;
+    border-color: darkseagreen;
+    padding: 5px;
+}
+
+.desafio-terceira-sessao{
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.repositorios_renderizados{
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    top: -16%;
+    left: 25%;
+    overflow: scroll;
+}
+
+.nav-bar-table-primeira-sessao{
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#input-profile-valor{
+    text-align: center;
+}
+
+.imagens-redes-sociais-primeira-sessao{
+    width: 40px;
+    height: 40px;
+}
+
+.autor-da-pagina{
+    padding-top: 10px;
+    text-align: inherit;
+}
+
+.top_menu-primeira-sessao{
+    text-align: right;
+   padding-top: 10px;
+}
+
+
+
+.texto-principal-primeira-sessao-h1{
+    color: $cor-font-titulo-primeira-sessao;
+    font-family: $familia-font-primeira-sessao;
+    font-style: $estilo-font-primeira-sessao;
+}
+
+.texto-principal-primeira-sessao-h2{
+    color: $cor-font-titulo-primeira-sessao;
+    font-family: $familia-font-primeira-sessao;
+    font-style: $estilo-font-primeira-sessao;
+}
+
+
+@media screen and (min-width:1152px) and (max-width:1278px){
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+    }
+
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 144px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 404px;
+        text-align: center;
+        
+    }
+
+    .button-repositorios{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        display: flex;
+    }
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 338px;
+        display: flex;
+        background-size: cover;
+    }
+    
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 542px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 322px;
+        padding-top: 91px;
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+    .texto-segunda-sessao{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+    display: block;
+    position: relative;
+    color: #5f9ea0;
+    font-family: system-ui;
+    font-weight: 700;
+    font-size: 15px;
+    p{
+       text-align: justify; 
+       width: 50%;
+       display: flex;
+       padding-left: 25%;
+    }
+   
+ }
+
+
+}
+
+
+@media screen and (min-width:1280px) and (max-width:1365px){
+
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+    .texto-segunda-sessao{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+    display: block;
+    position: relative;
+    color: #5f9ea0;
+    font-family: system-ui;
+    font-weight: 700;
+
+    p{
+       text-align: justify; 
+       width: 50%;
+       display: flex;
+       padding-left: 25%;
+    }
+
+    h2{
+        padding-bottom: 25px;
+    }
+ }
+
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 138px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 410px;
+        text-align: center;
+        
+    }
+
+    .button-repositorios{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        display: flex;
+    }
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 396px;
+        display: flex;
+        background-size: cover;
+    }
+    
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 610px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 360px;
+        padding-top: 91px;
+    }
+  
+}
+
+@media screen and (min-width:1366px) and (max-width:1439px){
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 132px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 418px;
+        text-align: center;
+        
+    }
+
+
+    .texto-segunda-sessao{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2%;
+        display: block;
+        position: relative;
+        color: #5f9ea0;
+        font-family: system-ui;
+        font-weight: 700;
+    
+        p{
+           text-align: justify; 
+           width: 50%;
+           display: flex;
+           padding-left: 25%;
+        }
+    
+        h2{
+            padding-bottom: 25px;
+        }
+     }
+
+
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 380px;
+        padding-top: 91px;
+    }
+
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 628px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 442px;
+        display: flex;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width:1400px) and (max-width:1439px){
+   
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 476px;
+        display: flex;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width:1440px) and (max-width:1599px){
+   
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 132px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+
+    .texto-segunda-sessao{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2%;
+        display: block;
+        position: relative;
+        color: #5f9ea0;
+        font-family: system-ui;
+        font-weight: 700;
+    
+        p{
+           text-align: justify; 
+           width: 50%;
+           display: flex;
+           padding-left: 25%;
+        }
+    
+        h2{
+            padding-bottom: 25px;
+        }
+     }
+
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 416px;
+        text-align: center;
+        
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 416px;
+        padding-top: 91px;
+    }
+
+   
+
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 628px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 442px;
+        display: flex;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width:1600px) and (max-width:1679px){
+   
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 122px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 426px;
+        text-align: center;
+        
+    }
+
+    .texto-segunda-sessao{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2%;
+        display: block;
+        position: relative;
+        color: #5f9ea0;
+        font-family: system-ui;
+        font-weight: 700;
+    
+        p{
+           text-align: justify; 
+           width: 50%;
+           display: flex;
+           padding-left: 25%;
+        }
+    
+        h2{
+            padding-bottom: 25px;
+        }
+     }
+
+
+     .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 490px;
+        display: flex;
+        background-size: cover;
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 474px;
+        padding-top: 91px;
+    }
+
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 721px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+}
+
+@media screen and (min-width:1366px) and (max-width:1679px){
+   
+
+    .button-repositorios{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        display: flex;
+    }
+
+}
+
+@media screen and(min-width:1680px) and (max-width:1919px){
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 122px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 426px;
+        text-align: center;
+        
+    }
+
+    .texto-segunda-sessao{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2%;
+        display: block;
+        position: relative;
+        color: #5f9ea0;
+        font-family: system-ui;
+        font-weight: 700;
+    
+        p{
+           text-align: justify; 
+           width: 50%;
+           display: flex;
+           padding-left: 25%;
+        }
+    
+        h2{
+            padding-bottom: 25px;
+        }
+     }
+
+
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 506px;
+        display: flex;
+        background-size: cover;
+    }
+    
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left : 780px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+
+    .button-repositorios{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        display: flex;
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 504px;
+        padding-top: 91px;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and(min-width:1920px){
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 122px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .texto-segunda-sessao{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2%;
+        display: block;
+        position: relative;
+        color: #5f9ea0;
+        font-family: system-ui;
+        font-weight: 700;
+    
+        p{
+           text-align: justify; 
+           width: 50%;
+           display: flex;
+           padding-left: 25%;
+        }
+    
+        h2{
+            padding-bottom: 25px;
+        }
+     }
+
+
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 694px;
+        display: flex;
+        background-size: cover;
+    }
+    
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 780px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 515px;
+        text-align: center;
+        
+    }
+
+    .button-repositorios{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        display: flex;
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 528px;
+        padding-top: 91px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:2560px){
+    
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 50px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 470px;
+        text-align: center;
+        
+    }
+
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 838px;
+        display: flex;
+        background-size: cover;
+    }
+    
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 1088px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 774px;
+        padding-top: 91px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:2048px) and (max-width:2048px){
+    
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 662px;
+        display: flex;
+        background-size: cover;
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 610px;
+        padding-top: 91px;
+        text-align: center;
+    }
+
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 886px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 470px;
+        text-align: center;
+        
+    }
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 82px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+
+}
+
+@media screen and (min-width:2049){
+
+    .circulo-terceira-sessao{
+        width: 158px;
+        height: 160px;
+        border-radius: 50%;
+        margin-top: 88px;
+        margin-right: 694px;
+        display: flex;
+        background-size: cover;
+    }
+    
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -106px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 780px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 515px;
+        text-align: center;
+        
+    }
+
+    .button-repositorios{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        display: flex;
+    }
+
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 528px;
+        padding-top: 91px;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width:1680px) and (max-width:1920px){
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 108px;
+        padding-left: 66px;
+        font-size: 16px;
+        display: list-item;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 434px;
+        text-align: center;
+        
+    }
+   
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1150px){
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        image-rendering: optimizeQuality;
+        filter: brightness(0.7);
+    }
+  
+    
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+    .texto-segunda-sessao{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+    display: block;
+    position: relative;
+    color: #5f9ea0;
+    font-family: system-ui;
+    font-weight: 700;
+
+    p{
+       text-align: justify; 
+       width: 50%;
+       display: flex;
+       padding-left: 25%;
+    }
+
+    h2{
+        padding-bottom: 25px;
+    }
+ }
+
+}
+
+@media screen and (min-width:360px) and (max-width:1024px){
+
+
+    .primeira-sessao-class{
+        width: auto;
+        height: 780px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -15px;
+        filter: brightness(0.7);
+    }
+
+    .top-menu-primeira-sessao{
+        text-align: end;
+        padding-top: 10px;
+    }
+
+
+    .texto-principal-primeira-sessao{
+        text-align: center;
+        padding-top: 118px;
+        padding-left: 48px;
+        font-size: 10px;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 362px;
+        text-align: center;
+        
+    }
+
+    .button-repositorios{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        display: flex;
+    }
+
+    .form-buscar-repositorios{
+        width: 25%;
+        height: 30%;
+        margin-top: -166px;
+        background-color: $cor-fundo-terceira-sessao;
+        margin-left: 506px;
+        display: flex;
+        position: relative;
+        border-color: darkseagreen;
+        border-style: solid;
+        justify-content: center;
+
+    }
+
+
+    .circulo-terceira-sessao{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin-top: 104px;
+        margin-right: 382px;
+        display: flex;
+        position: absolute;
+        background-size: cover;
+    }
+
+    .desafio-terceira-sessao{
+        justify-content: center;
+        text-align: center;
+        width: 64%;
+        height: 52%;
+        background-color:white;
+        display: flex;
+        position: relative;
+        top: 20%;
+        left: 20%;
+    }
+
+    .repositorios_renderizados{
+        justify-content: center;
+        text-align: center;
+        width: 64%;
+        height: 52%;
+        background-color:white;
+        display: flex;
+        position: relative;
+        top: -16%;
+        left: 20%;
+        overflow: scroll;
+    }
+
+    .texto-segunda-sessao{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2%;
+        display: block;
+        position: relative;
+        color: #5f9ea0;
+        font-family: system-ui;
+        font-weight: 700;
+        font-size: 14px;
+    
+        p{
+           text-align: justify; 
+           width: 50%;
+           display: flex;
+           padding-left: 25%;
+        }
+    
+        h2{
+            padding-bottom: 2px;
+        }
+    }
+    
+}
+
+
+
+@media screen and (max-width:1023px){
+       
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 232px;
+        padding-top: 36px;
+    }
+
+    .redes-sociais-table-primeira-sessao{
+        width: 100%;
+        padding-top: 318px;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1024px){
+       
+    .input-profile-name{
+        display: inline-block;
+        position: absolute;
+        padding-left: 250px;
+        padding-top: 36px;
+    }
+}
+
+
+.segunda_sessao{
+    width: auto;
+    height: 700px;
+    background-color:$cor-fundo-segunda-sessao;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+
+.terceira_sessao{
+    width: auto;
+    height: 700px;
+    background-color:$cor-fundo-terceira-sessao;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+
+    h2{
+        text-align: center;
+        position: relative;
+        padding-top: 20px;
+        display: block;
+        font-weight: 700;
+        font-family: system-ui;
+        color:#5f9ea0;
+        margin-bottom: -56px;
+    }
+}
+
+
+
+.terceira_sessao_repositorios{
+    width: auto;
+    height: 444px;
+    background-color:$cor-fundo-terceira-sessao;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+
+#terceira-sessao-repositorios-id{
+    display: none;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 5.5rem;
+    background-color:$cor-fundo-footer;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    padding-right: 7px;
+
+    b{
+        display: block;
+        position: relative;
+        top: 40%;
+        font-family: system-ui;
+        color: white;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "desafio-frontend",
+  "version": "1.0.0",
+  "description": "desafio-frontend",
+  "private": true,
+  "scripts": {
+    "prd": "node-sass src/scss -o dist/css webpack --config ./config/webpack-prd.config.js",
+    "predev": "node-sass src/scss -o dist/css",
+    "dev": "webpack  --watch --config ./config/webpack-dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wellington3010/desafio-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wellington3010/desafio-frontend/issues"
+  },
+  "homepage": "https://github.com/Wellington3010/desafio-frontend#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "dart-sass": "^1.25.0",
+    "lodash": "^4.17.20",
+    "mini-css-extract-plugin": "^1.1.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0",
+    "sweetalert": "^2.1.2",
+    "express": "^4.17.1"
+
+  },
+  "dependencies": {
+    "css-loader": "^5.0.0",
+    "dart-sass": "^1.25.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.20",
+    "node-sass": "^4.14.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "sweetalert": "^2.1.2",
+    "webpack-cli": "^4.0.0"
+  }
+}
