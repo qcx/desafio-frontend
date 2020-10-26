@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizador de Perfil</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to view the full site.</noscript>
+  <div class="grid-container">
+    <!--header header header header header header header header header header header header header -->
+    <header class="header">
+      <nav class="header-navegacao">
+        <div class="header-nome">LEONARDO MUROS DO NASCIMENTO</div>
+        <div class="header-atalhos">          
+          <div><a href="#home" name="home">Home</a></div>
+          <div><a href="#sobre">Sobre</a></div>
+          <div><a href="#desafio">Desafio</a></div>    
+        </div> 
+      </nav>
+    
+      <div class="header-informacao">
+        <div>Desenvolvedor Front End</div>
+        <div>Desafio Qconcursos.com</div>
+      </div> 
+
+      <nav class="header-links">
+        <a href="https://www.linkedin.com/in/leonardo-muros/" target="_blank">
+          <img src="image/linkedin.jpg"/>
+        </a>
+        <a href="https://github.com/LeonardoPerson?tab=repositories" target="_blank">
+          <img src="image/github.jpg"/>
+        </a>
+        <a href="https://www.facebook.com/leonardo.person.nascimento/" target="_blank">
+          <img src="image/facebook.jpg"/>
+        </a>
+      </nav>
+    </header>
+    <!--main main main main main main main main main main main main main main main main main main -->
+    <main class="main">
+      <section class="section-sobre">      
+        <h1><a name="sobre">Sobre</a></h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. It has survived not only five centuries, but also the leap into 
+          electronic typesetting, remaining essentially unchanged. It was popularised 
+          in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+          and more recently with desktop publishing software like Aldus PageMaker including 
+          versions of Lorem Ipsum.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. It has survived not only five centuries, but also the leap into 
+          electronic typesetting, remaining essentially unchanged. It was popularised 
+          in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+          and more recently with desktop publishing software like Aldus PageMaker including 
+          versions of Lorem Ipsum.
+        </p>
+          
+        </p>
+      </section>
+      <!----------------------------------------------------------------------------------------->
+      <section class="section-desafio">
+        <h1>
+          <a name="desafio">Desafio</a>
+        </h1>
+        <!--------------------------------------------------------------------->
+        <form id="form">
+          <input            
+            id="search"
+            type="text"
+            placeholder="Insira o nome do perfil Github aqui . . ."            
+          />
+        </form>      
+        <!--------------------------------------------------------------------->    
+        <div id="formEmpty"></div>
+        <div id="profilenotfound"></div>
+        <!--------------------------------------------------------------------->
+        <div class="show-totalInfo">
+          <div id="show-profile"></div>
+          <div id="show-repositories" ></div>
+          <div id="show-favorities"></div>
+        </div>
+        <!--------------------------------------------------------------------->
+      </section>    
+    </main>
+    <!--footer footer footer footer footer footer footer footer footer footer footer footer footer -->
+    <footer class="footer">
+      <div>Desafio Desenvolvedor Front End</div>
+      <div>Qconcursos.com</div>
+    </footer>  
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

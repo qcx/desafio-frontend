@@ -1,0 +1,381 @@
+/*Definindo variáveis---------------------------------------------------------*/
+/*características gerais que se repetem*/
+$sizeGeral: 1rem;
+$colorWhiteGeral: white;
+$colorGrayGeral: rgb(95, 95, 95);
+
+/*Display flex com alinhamento central*/
+.displayFlexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Display flex column*/
+.displayFlexColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Características de botões do display*/
+.botaoDisplay{
+  border: 2px solid rgb(0, 182, 182);
+  color: rgb(0, 182, 182);
+  font-size: 0.7rem;
+  width: 12rem;
+  height: 2rem;
+}
+
+/*Tratamento de margem left e right frequentes*/
+@mixin marginLeftRight($left, $right){
+  margin-left: $left;
+  margin-right: $right;
+}
+
+/*Configurações gerais do corpo-----------------------------------------------*/
+body{  
+  box-sizing: border-box;
+  font-size: 62.5% Helvetica; /*Equivale a 16px - rem 
+  no restante do código é relativo a essa medida*/
+  height: 100vh;
+  margin: 0rem;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*header header header header header header header header header header header */
+.header{
+  display: grid;
+  color: $colorWhiteGeral;
+  background-image: url("image/tech2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 80%; /*posição responsiva de largura x altura*/
+  height: 150vh; /*Irá mostrar a imagem por completo*/
+}
+
+.header-navegacao{
+  display: grid;
+  font-weight: 400;
+  grid-template-columns: repeat(2, 1fr);
+  height: 6rem;
+}
+
+.header-nome{
+  display: flex;
+  padding: 2rem;
+  font-size: $sizeGeral;
+}
+
+.header-atalhos{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.header-atalhos > div > a{
+  margin-right: 2rem;
+  color: $colorWhiteGeral;  
+}
+
+a{
+  text-decoration: none;
+}
+
+.header-informacao{
+  @extend .displayFlexCenter;
+  flex-direction: column;  
+  font-size: 1.5rem;
+}
+
+.header-informacao > div:first-child{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.header-links{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+.header-links > a > img{
+  max-width: 60px;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+/*main main main main main main main main main main main main main main main */
+h1{
+  text-align: center;
+  color: rgb(73, 73, 73);
+}
+
+.section-sobre{
+  @include marginLeftRight(10%, 10%);
+  margin-bottom: 5%;
+}
+
+input{
+  padding-top: 1rem;
+  width: 25rem;
+  font-size: $sizeGeral;
+  padding: 0.5rem;
+  font-weight: 800;
+  border: 2px gray solid;
+  border-radius: 5px;
+  color: rgb(131, 131, 131);  
+}
+
+input:focus{
+  box-shadow: 0 0 0 0;
+  border: 3px gray solid;
+  outline: 0;
+}
+
+#formEmpty{
+  color: $colorGrayGeral;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+#profilenotfound{
+  color: $colorGrayGeral;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.warning-message{
+  padding: 4rem;
+}
+
+/*Organizando a área de visualização principal do perfil como uma grade-------*/
+.section-desafio{
+  @extend .displayFlexCenter;
+  background-color: rgb(203, 216, 214);  
+  flex-direction: column; 
+}
+
+.show-totalInfo{
+  @extend .displayFlexColumn;
+  background-color: $colorWhiteGeral;
+  border-radius: 1.5rem;  
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+.show-totalInfoInicial{
+  background-color: transparent;
+}
+
+.profile{
+  display: grid;
+  grid-template-areas: 
+  "avatar repo repo"
+  "avatar repo repo"
+  "avatar repo repo"
+  "visit-profile repo-button repo-button"; 
+}
+
+.avatar{
+  grid-area: avatar;
+  margin: auto;
+  padding: 2rem;
+  width: 12rem;
+  border-radius: 8rem;  
+}
+
+.repo{
+  grid-area: repo;
+  @extend .displayFlexColumn;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.visit-profile{
+  grid-area: visit-profile;
+  margin: auto;
+  padding: 1rem;
+  font-weight: 700;  
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.repo-button{
+  grid-area: repo-button;
+  display: flex;
+  margin-right: 5rem; 
+}
+
+/*Lista de repositórios e favoritos ------------------------------------------*/
+#repo-list{
+  @extend .botaoDisplay;
+  @extend .displayFlexCenter;
+  margin-right: 3rem;  
+  cursor: pointer;
+}
+
+#repo-starred{
+  @extend .botaoDisplay;
+  @extend .displayFlexCenter;
+  cursor: pointer;
+}
+
+#show-profile{
+  display: flex;
+  justify-content: center;
+  padding: 5% 15% 5% 15%;
+}
+
+#show-repositories, #show-favorities{
+  @include marginLeftRight(5rem, 5rem);
+  font-weight: 500;
+}
+
+.titleListRepositories, .titleListFavorities{ 
+  background-color: rgb(119, 119, 119); 
+  color: $colorWhiteGeral;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.itemRepositories1{
+  background-color: rgb(207, 227, 230);
+}
+
+.itemRepositories1, .itemRepositories2{
+  padding: 0.5rem;
+}
+
+/*footer footer footer footer footer footer footer footer footer footer footer */
+.footer{
+  @extend .displayFlexCenter;
+  color: $colorWhiteGeral;
+  font-weight: 400;
+  background-color: rgb(46, 45, 45);
+  height: 5rem;
+}
+
+.footer > div{
+  margin-right: 1rem;
+}
+
+/*Media query 700px --------------------------------------------------------- */
+@media (max-width: 800px){
+  /*Configurações iniciais do sass*/
+  .displayFlexColumnMedia{
+    display: flex;
+    flex-direction: column;
+  }
+
+  @mixin marginLeftRight($left, $right){
+    margin-left: $left;
+    margin-right: $right;
+  }
+
+  /*Configurações gerais*/
+  .header-navegacao{
+    @extend .displayFlexColumnMedia;
+  }
+
+  .header-nome{  
+    justify-content: center;
+    font-size: 0.9rem;    
+  }
+
+  .header-atalhos{   
+    justify-content: center;   
+    margin-left: 2rem;  
+    padding: 1rem;
+  }
+
+  .header-informacao > div:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .header-links > a > img{
+    max-width: 40px;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  .header{
+    height: 90vh;
+  }
+
+  input{
+    width: 20rem;
+    font-size: 0.9rem;
+    font-weight: 800;  
+  }
+
+  .show-totalInfo{
+    margin: 1rem;    
+  }
+
+  #show-repositories, #show-favorities{
+    @include marginLeftRight(2rem, 2rem);
+  }
+
+  .profile{
+    @extend .displayFlexColumnMedia;
+    align-items: center;
+  }
+
+  .avatar{    
+    width: 10rem;
+  }
+
+  .repo-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include marginLeftRight(auto, auto);
+  }
+
+  #repo-list{
+    margin-top: 1rem;
+    @include marginLeftRight(2rem, 2rem);    
+  }
+  
+  #repo-starred{  
+    margin-top: 1rem;
+    @include marginLeftRight(2rem, 2rem);
+  }
+
+  .footer{
+    @extend .displayFlexColumnMedia;
+   } 
+}
+
+/*Media query 400px --------------------------------------------------------- */
+@media (max-width: 550px){
+  .header-informacao{
+    font-size: $sizeGeral;
+  }
+
+  .header-informacao > div:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .repo-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;   
+    margin-left: auto;
+  }
+
+  input{
+    width: 15rem;
+  }
+
+}
