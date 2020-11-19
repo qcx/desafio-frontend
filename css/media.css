@@ -1,0 +1,250 @@
+
+    /*====================================LargeDevice====================================*/
+
+@media screen and (max-width:1200px) {
+    
+    /* --------------------HEADER--------------------*/ 
+
+    #logo {
+        width: 80px;
+        left: 18%;   
+    }
+        
+    #menu-lista {
+        margin-right: 10%;
+    }
+
+    #conteudo-inicial {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        color: #f7f5e6;
+    }
+        
+    #conteudo-inicial h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    #conteudo-inicial h2{
+        font-size: 2.25rem;
+    }
+    
+    #redes-sociais i{
+        font-size: 3rem;
+    }
+    
+    /* --------------------MAIN--------------------*/    
+    #sobre h2 {
+        font-size: 1.75rem;
+        margin: 30px 0;
+    }
+    
+    #sobre p {
+        width: 70%;
+        text-align: left;
+        margin: 0 auto;
+    }
+    }
+
+    /*====================================Medium Device/Tablets====================================*/
+
+@media screen and (max-width:820px) {
+   
+/* --------------------HEADER--------------------*/ 
+
+    #menu-lista li {
+        font-size: 1.5rem;
+    }
+
+    #conteudo-inicial h1{
+        font-size: 3rem;
+    }
+
+    #conteudo-inicial h2{
+        font-size: 2.75rem;
+    }
+
+    /* --------------------MAIN--------------------*/ 
+
+    #sobre h2 {
+        font-size: 2.25rem;
+    }
+
+    #sobre p {
+        width: 80%;
+        font-size: 1.25rem;
+    }
+
+    #desafio h2 {
+        margin: 30px;
+        text-align: center;
+        font-size: 1.88rem;
+        margin-bottom: 0px;
+    }
+
+    #perfil-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    #perfil {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+        
+    #perfil-qcx {
+        padding-top: 20px;
+    }
+
+    #perfil-qcx img {
+        min-width: 150px;
+    }
+
+    #informacoes-qcx {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center; 
+    }
+
+    #informacoes-qcx ul {
+        font-size: 1rem;
+        margin-top: 20px;  
+    }
+
+    .btn-repositorio {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .btn-repositorio input{
+        width: 150px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    #lista-repositorio {
+        width: 100%;
+        height: auto;
+        position: relative; 
+        margin-bottom: 100px; 
+    }
+
+/* --------------------FOOTER--------------------*/ 
+
+    #copy p {
+        color: #fff;
+        font-size: 1.25rem;
+    }
+
+    #inicio-home a i {
+        font-size: 1.88rem;
+    }
+}
+
+    /*====================================SmallDevice/Celular====================================*/
+
+@media screen and (max-width: 600px) {
+
+    /* --------------------HEADER--------------------*/ 
+
+    #menu-lista {
+        position: fixed;
+        width: 100%;
+        background: #EBF6EE;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    #menu-lista li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #menu-lista li a {
+        font-size: 20px;
+        color: #000;
+    }
+
+    label #btn-menu {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #check:checked ~ label #btn-menu {
+        display: none;
+    }
+
+    #check:checked ~ label #btn-cancelar {
+        display: block;
+    }
+
+    #conteudo-inicial h1{
+        font-size: 2.75rem;
+    }
+
+    #conteudo-inicial h2{
+        font-size: 2.25rem;
+    }
+
+/* --------------------MAIN--------------------*/ 
+
+    #sobre h2 {
+        font-size: 2rem;
+    }
+
+    #informacoes-qcx ul {
+        margin-top: 0px;
+    }
+
+    .btn-repositorio {
+        margin: 20px auto;
+    }
+
+/* --------------------FOOTER--------------------*/ 
+
+    #copy p {
+        font-size: 1rem;
+    }
+
+    #inicio-home a i {
+        font-size: 1.5rem;   
+    }
+}
+
+/*====================================ExtraSmall====================================*/
+
+@media only screen and (max-width: 376px) {
+
+
+    #conteudo-inicial h1{
+        font-size: 2.75rem;
+    }
+
+    #conteudo-inicial h2{
+        font-size: 2.25rem;
+    }
+
+
+    #btn-left {
+        margin-bottom: 10px;
+    }
+
+    /* --------------------FOOTER--------------------*/ 
+
+    #copy p {
+        font-size: 0.75rem;
+    }
+
+    #inicio-home a i {
+        font-size: 1.25rem;   
+    }
+}
