@@ -151,7 +151,7 @@
     /* --------------------HEADER--------------------*/ 
 
     #menu-lista {
-        position: fixed;
+        position: absolute;
         width: 100%;
         background: #EBF6EE;
         top: 90px;
