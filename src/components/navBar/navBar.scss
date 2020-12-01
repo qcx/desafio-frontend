@@ -1,0 +1,33 @@
+@import "../../_variables.scss";
+
+nav {
+  background-color: rgba(102, 102, 102, 0.8);
+  z-index: 100;
+  top: 0;
+  position: fixed;
+  width: $screen-large;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  justify-items: start;
+
+  a,
+  span {
+    color: $primary-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: $screen-medium) {
+  nav {
+    width: $screen-medium;
+  }
+}
+
+@media (max-width: $screen-small) {
+  nav {
+    width: $screen-small;
+  }
+}

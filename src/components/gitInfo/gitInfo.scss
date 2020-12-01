@@ -1,0 +1,21 @@
+@import "../../_variables.scss";
+
+ul {
+  padding: 0 0;
+  list-style: none;
+  text-align: left;
+  line-height: 1.5em;
+  color: $git-dark-gray;
+  font-weight: bolder;
+}
+
+div {
+  margin-top: 50px;
+
+  a {
+    color: $git-light-gray;
+    border: 1px solid $git-light-gray;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../_variables.scss";
+
+section {
+  color: $primary-color;
+  position: relative;
+  height: 682px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("images/large/background.jpg");
+}
+
+@media (max-width: var(--screen-medium)) {
+  section {
+    height: 512px;
+    background-image: url("images/medium/background.jpg");
+  }
+}
+
+@media (max-width: var(--screen-small)) {
+  section {
+    height: 320px;
+    background-image: url("images/small/background.jpg");
+  }
+}
+
+article {
+  margin: auto auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+  width: 100%;
+
+  h1 {
+    margin: 0 0;
+    font-size: 4em;
+  }
+
+  h3 {
+    margin: 0 0;
+    font-size: 2.5em;
+  }
+}

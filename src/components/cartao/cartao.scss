@@ -1,0 +1,8 @@
+div {
+  background-color: white;
+  padding: 5% 5%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 160px auto;
+  justify-items: start;
+}

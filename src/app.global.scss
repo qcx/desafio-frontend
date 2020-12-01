@@ -1,0 +1,20 @@
+@import "./_variables.scss";
+@import "./_reset.scss";
+
+.container {
+  margin: auto;
+  width: $screen-large;
+  overflow: hidden;
+}
+
+@media (max-width: $screen-medium) {
+  .container {
+    width: $screen-medium;
+  }
+}
+
+@media (max-width: $screen-small) {
+  .container {
+    width: $screen-small;
+  }
+}
