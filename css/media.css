@@ -151,11 +151,11 @@
     /* --------------------HEADER--------------------*/ 
 
     #menu-lista {
-        position: absolute;
         width: 100%;
-        background: #EBF6EE;
+        position: absolute;
         top: 90px;
         left: -100%;
+        background: #EBF6EE;
         text-align: center;
         transition: all .5s;
     }

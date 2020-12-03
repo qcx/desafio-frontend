@@ -1,31 +1,33 @@
-const profile = document.getElementById('perfil');
-const reposList = document.getElementById('listar-repositorios');
-const starredList = document.getElementById('listar-favoritos');
-const userUrl = 'https://api.github.com/users/DanVilela'
-const repos_url = 'https://api.github.com/users/DanVilela/repos'
-const starred_url = 'https://api.github.com/users/DanVilela/starred'
+const user = "DanVilela";
+const userUrl = `https://api.github.com/users/${user}`;
+const reposUrl = `https://api.github.com/users/${user}/repos`;
+const starredUrl = `https://api.github.com/users/${user}/starred`;
+const profile = document.querySelector('.perfil');
+const reposList = document.querySelector('.listar-repositorios');
+const starredList = document.querySelector('.listar-favoritos');
 
-async function getProfile() {
+const getInfo = async (url) => {
   try {
-    const response = await fetch(userUrl)
+    const response = await fetch(url)
     const data = await response.json()
-    renderFields(data)
-  } catch(error){
-    console.log(error)
+    return data;
+  } catch (error) {
+    console.log(error);
+    throw error;
   }
 }
 
-const renderFields = data => {
-  const { name, avatar_url, html_url, public_repos, followers, following } = data
+const renderProfile = data => {
+  const { name, avatar_url, html_url, public_repos, followers, following } = data;
 
   profile.innerHTML = `
-  <div id="perfil-qcx">
+  <div class="perfil-repo">
   <h3>${name}</h3>
-  <img src="${avatar_url}" alt="imagem Qconcursos">
+  <img src="${avatar_url}" alt="imagem Perfil">
   <a href="${html_url}" target="blank">Visitar perfil</a>
   </div>
   
-  <div id="informacoes-qcx">
+  <div class="informacoes-repo">
   <ul>
   <li>Repositórios: ${public_repos} </li>
   <li>Seguidores: ${followers}</li>
@@ -33,64 +35,55 @@ const renderFields = data => {
   </ul>
   
   <div class="btn-repositorio">
-  <input id="btn-left" type="button" value="Ver Repositórios" onclick="btnShowListRepo(repos_url,reposList)">
-  <input id="btn-right" type="button" value="Ver Favoritos" onclick="btnShowListStarred(starred_url,starredList)">
+  <input class="btn-left" type="button" value="Ver Repositórios" onclick="btnToggleDisplay(reposList)">
+  <input class="btn-right" type="button" value="Ver Favoritos" onclick="btnToggleDisplay(starredList)">
   </div>
   `
 }
 
-async function getRepos(url,element) {
-  try {
-    const responseRepos = await fetch(url)
-    const repos = await responseRepos.json()
-    renderReposByList(repos,element)
-  } catch(error) {
-    console.log(error)
-  }
-}
-
-const renderReposByList = (repos,element) => {
-  
+const renderRepos = (repos, element) => {
   if (element === reposList) {
-    element.innerHTML = '<h4>Lista dos Repositórios</h4>' 
-  } else { 
+    element.innerHTML = '<h4>Lista dos Repositórios</h4>'
+  } else {
     element.innerHTML = '<h4>Lista dos Favoritos</h4>'
   }
 
-  for(i=0; i<repos.length; i++) {
+  for (item of repos) {
     element.innerHTML += `
     <ul>
-      <li><a href="https://github.com/DanVilela/${repos[i]['name']}">${repos[i]['name']}</a></li> 
+      <li><a href="${[item.html_url]}">${[item.name]}</a></li> 
     </ul>
     `
   }
 }
 
-const displayList = element => {
-  if(element.style.display == 'block') return element.style.display = 'none'
+const btnToggleDisplay = element => {
+  if (element.style.display == 'block') return element.style.display = 'none'
 
-
-  if(element === reposList) {
+  if (element === reposList) {
     reposList.style.display = 'block'
     starredList.style.display = 'none'
-  } else { 
-    starredList.style.display = 'block' 
-    reposList.style.display = 'none' 
+  } else {
+    starredList.style.display = 'block'
+    reposList.style.display = 'none'
   }
 }
 
-function btnShowListRepo(repo,element) {
-  displayList(element)
-  getRepos(repo,element)
+const startProfile = async () => {
+  try {
+    const data = await getInfo(userUrl);
+    const dataRepos = await getInfo(reposUrl);
+    const dataStarred = await getInfo(starredUrl);
+    renderProfile(data);
+    renderRepos(dataRepos, reposList);
+    renderRepos(dataStarred, starredList);
+  } catch (error) {
+    console.log(error)
+  }
 }
+startProfile();
 
-function btnShowListStarred(repo,element) {
-  displayList(element)
-  getRepos(repo,element)
-}
-getProfile();
-
-function topFunction() {
+const btnTopFunction = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
