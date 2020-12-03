@@ -21,7 +21,6 @@ body {
     letter-spacing: 1px;
 }
 
-
 /* --------------------HEADER--------------------*/ 
 
 .bg-sombra {
@@ -32,37 +31,36 @@ body {
     min-height: 100vh;
 } 
 
-#navbar {
+.navbar {
     width: 100%;
     height: 100px;
-    
 }
 
-#logo {
+.logo {
     width: 90px;
     position: absolute;
     top: 13px;
     left: 18%;   
 }
     
-#menu-lista {
+.menu-lista {
     float: right;
     margin-right: 10%;
 }
 
-#menu-lista li {
+.menu-lista li {
     display: inline-block;
     line-height: 100px;
     margin: 0 15px;
     font-size: 1.25rem;
 }
 
-#menu-lista li a {
+.menu-lista li a {
     color: #f7f5e6;
     position: relative;
 }
 
-#menu-lista li a:before {
+.menu-lista li a:before {
    content: '';
    position: absolute;
    left: 0;
@@ -75,7 +73,7 @@ body {
    transition: transform .4s linear ;
 }
 
-#menu-lista li a:hover:before {
+.menu-lista li a:hover:before {
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -94,7 +92,7 @@ label #btn-menu, label #btn-cancelar {
     display: none;
 }
 
-#conteudo-inicial {
+.conteudo-inicial {
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -103,18 +101,18 @@ label #btn-menu, label #btn-cancelar {
     color: #f7f5e6;
 }
 
-#conteudo-inicial h1{
+.conteudo-inicial h1{
     font-size: 3.5rem;
     font-weight: bold;
     color: #f7f5e6;;
 }
 
-#conteudo-inicial h2{
+.conteudo-inicial h2{
     font-size: 2.5rem;
     color: #f7f5e6;
 }
 
-#redes-sociais i{
+.redes-sociais i{
     color: #f7f5e6;
     font-size: 3rem;
     margin: 0 0 30px 20px;
@@ -153,7 +151,7 @@ label #btn-menu, label #btn-cancelar {
     padding: 50px 0;
 }
 
-#perfil-container {
+.perfil-container {
     width: 820px;
     background-color: #fff;
     margin:20px auto;
@@ -161,7 +159,7 @@ label #btn-menu, label #btn-cancelar {
     border-radius: 10px;
 }
 
-#perfil {
+.perfil {
     height: 350px;
     display: flex;
     justify-content: space-evenly;
@@ -171,33 +169,33 @@ label #btn-menu, label #btn-cancelar {
     text-transform: uppercase;
 }
     
-#perfil-qcx {
+.perfil-repo {
     width: 200px;
     text-align: center;
 }
 
-#perfil-qcx h3 {
+.perfil-repo h3 {
     font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
-#perfil-qcx img {
+.perfil-repo img {
     width: 160px;
     border-radius: 50%; 
 }
 
-#perfil-qcx a {
+.perfil-repo a {
     text-decoration: none;
     font-size: 1rem;
     color: #395442;
 }
 
-#informacoes-qcx {
+.informacoes-repo {
     width: 300px;
     margin-right: 70px;
 }
 
-#informacoes-qcx ul {
+.informacoes-repo ul {
     font-size: 1rem;
 }
 
@@ -218,14 +216,14 @@ label #btn-menu, label #btn-cancelar {
     outline: none;
 }
 
-#listar-repositorios, #listar-favoritos {
+.listar-repositorios, .listar-favoritos {
     box-sizing: border-box;
     display: none ;
     flex-direction: column;
     justify-content: left;
 }
 
-#listar-repositorios h4, #listar-favoritos h4 {
+.listar-repositorios h4, .listar-favoritos h4 {
     color: #395442;
     width: 100%;
     padding: 0 10px;
@@ -233,22 +231,22 @@ label #btn-menu, label #btn-cancelar {
 }
 
 
-#listar-repositorios ul li, #listar-favoritos ul li{
+.listar-repositorios ul li, .listar-favoritos ul li{
     padding: 15px 10px;
     font-size: 1rem;
     font-weight: bold;
     color: #395442;
 }
 
-#listar-repositorios ul li a, #listar-favoritos ul li a{
+.listar-repositorios ul li a, .listar-favoritos ul li a{
     color: #395442;
 }
 
-#listar-repositorios ul li a:hover, #listar-favoritos ul li a:hover{
+.listar-repositorios ul li a:hover, .listar-favoritos ul li a:hover{
     border-bottom: 3px solid #395442;
 }
 
-#listar-repositorios ul:nth-child(even), #listar-favoritos ul:nth-child(even) {
+.listar-repositorios ul:nth-child(even), .listar-favoritos ul:nth-child(even) {
     background-color: #D2EEDF;
     width: 100%;
 }
@@ -264,12 +262,12 @@ footer {
     box-sizing: border-box;
 }
 
-#copy p {
+.copy p {
     color: #f7f5e6;
     font-size: 1.25rem;
 }
 
-#inicio-home a i {
+.click-home a i {
     color: #373737;
     background-color: #f7f5e6;
     font-size: 1.88rem;

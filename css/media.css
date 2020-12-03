@@ -5,16 +5,16 @@
     
     /* --------------------HEADER--------------------*/ 
 
-    #logo {
+    .logo {
         width: 80px;
         left: 18%;   
     }
         
-    #menu-lista {
+    .menu-lista {
         margin-right: 10%;
     }
 
-    #conteudo-inicial {
+    .conteudo-inicial {
         height: 90%;
         display: flex;
         flex-direction: column;
@@ -23,26 +23,26 @@
         color: #f7f5e6;
     }
         
-    #conteudo-inicial h1{
+    .conteudo-inicial h1{
         font-size: 3rem;
         font-weight: bold;
     }
     
-    #conteudo-inicial h2{
+    .conteudo-inicial h2{
         font-size: 2.25rem;
     }
     
-    #redes-sociais i{
+    .redes-sociais i{
         font-size: 3rem;
     }
     
     /* --------------------MAIN--------------------*/    
-    #sobre h2 {
+    .sobre h2 {
         font-size: 1.75rem;
         margin: 30px 0;
     }
     
-    #sobre p {
+    .sobre p {
         width: 70%;
         text-align: left;
         margin: 0 auto;
@@ -55,61 +55,61 @@
    
 /* --------------------HEADER--------------------*/ 
 
-    #menu-lista li {
+    .menu-lista li {
         font-size: 1.5rem;
     }
 
-    #conteudo-inicial h1{
+    .conteudo-inicial h1{
         font-size: 3rem;
     }
 
-    #conteudo-inicial h2{
+    .conteudo-inicial h2{
         font-size: 2.75rem;
     }
 
     /* --------------------MAIN--------------------*/ 
 
-    #sobre h2 {
+    .sobre h2 {
         font-size: 2.25rem;
     }
 
-    #sobre p {
+    .sobre p {
         width: 80%;
         font-size: 1.25rem;
     }
 
-    #desafio h2 {
+    .desafio h2 {
         margin: 30px;
         text-align: center;
         font-size: 1.88rem;
         margin-bottom: 0px;
     }
 
-    #perfil-container {
+    .perfil-container {
         width: 80%;
         margin: auto;
     }
 
-    #perfil {
+    .perfil {
         height: 100%;
         flex-wrap: wrap;
     }
         
-    #perfil-qcx {
+    .perfil-repo {
         padding-top: 20px;
     }
 
-    #perfil-qcx img {
+    .perfil-repo img {
         min-width: 150px;
     }
 
-    #informacoes-qcx {
+    .informacoes-repo {
         width: 100%;
         margin: 0 auto;
         text-align: center; 
     }
 
-    #informacoes-qcx ul {
+    .informacoes-repo ul {
         font-size: 1rem;
         margin-top: 20px;  
     }
@@ -125,7 +125,7 @@
         font-size: 1rem;
     }
 
-    #lista-repositorio {
+    .lista-repositorio {
         width: 100%;
         height: auto;
         position: relative; 
@@ -134,12 +134,12 @@
 
 /* --------------------FOOTER--------------------*/ 
 
-    #copy p {
+    .copy p {
         color: #fff;
         font-size: 1.25rem;
     }
 
-    #inicio-home a i {
+    .click-home a i {
         font-size: 1.88rem;
     }
 }
@@ -150,8 +150,9 @@
 
     /* --------------------HEADER--------------------*/ 
 
-    #menu-lista {
+    .menu-lista {
         width: 100%;
+        max-height: 300px;
         position: absolute;
         top: 90px;
         left: -100%;
@@ -160,13 +161,13 @@
         transition: all .5s;
     }
 
-    #menu-lista li {
+    .menu-lista li {
         display: block;
-        margin: 50px 0;
+        margin: 38px 0;
         line-height: 30px;
     }
 
-    #menu-lista li a {
+    .menu-lista li a {
         font-size: 20px;
         color: #000;
     }
@@ -187,21 +188,21 @@
         display: block;
     }
 
-    #conteudo-inicial h1{
+    .conteudo-inicial h1{
         font-size: 2.75rem;
     }
 
-    #conteudo-inicial h2{
+    .conteudo-inicial h2{
         font-size: 2.25rem;
     }
 
 /* --------------------MAIN--------------------*/ 
 
-    #sobre h2 {
+    .sobre h2 {
         font-size: 2rem;
     }
 
-    #informacoes-qcx ul {
+    .informacoes-repo ul {
         margin-top: 0px;
     }
 
@@ -211,40 +212,40 @@
 
 /* --------------------FOOTER--------------------*/ 
 
-    #copy p {
+    .copy p {
         font-size: 1rem;
     }
 
-    #inicio-home a i {
+    .click-home a i {
         font-size: 1.5rem;   
     }
 }
 
-/*====================================ExtraSmall====================================*/
+    /*====================================ExtraSmall====================================*/
 
 @media only screen and (max-width: 376px) {
 
 
-    #conteudo-inicial h1{
+    .conteudo-inicial h1{
         font-size: 2.75rem;
     }
 
-    #conteudo-inicial h2{
+    .conteudo-inicial h2{
         font-size: 2.25rem;
     }
 
 
-    #btn-left {
+    .btn-left {
         margin-bottom: 10px;
     }
 
     /* --------------------FOOTER--------------------*/ 
 
-    #copy p {
+    .copy p {
         font-size: 0.75rem;
     }
 
-    #inicio-home a i {
+    .click-home a i {
         font-size: 1.25rem;   
     }
 }
