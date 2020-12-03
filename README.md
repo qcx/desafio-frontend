@@ -6,11 +6,13 @@ O desafio consiste em implementar uma landing page onde o projeto tem o foco con
 
 O desafio foi solucionado utilizando HTML,CSS e JavaScript Vanilla. Na parte de CSS, também foi utilizado o media querie para o design responsívo para diversost tipos de dispositivo. 
 
+
+
 confira o link do site hospedado [clicando aqui](https://danvilela-desafioqconcursos.netlify.app/)
 
-Home do Desafio:
+
+
+### Home do Desafio:
 ![imagem da home desafio Daniel Vilela](img/qconcursos-vilela.jpg)
-
-
 
 
