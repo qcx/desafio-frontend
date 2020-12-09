@@ -1,0 +1,21 @@
+@import "../../_variables.scss";
+
+div {
+  width: 100%;
+
+  div {
+    margin-top: 1em;
+  }
+
+  img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+  }
+
+  a {
+    font-weight: bolder;
+    color: $git-dark-gray;
+    text-decoration: none;
+  }
+}
