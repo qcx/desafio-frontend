@@ -2,7 +2,7 @@ export default function fetchAPI(api) {
   let response = fetch(api, {
     method: "GET",
     headers: {
-      Authorization: `token ea3487bdd63e556f3dd4fa5b25fe7f3f77383eaf `,
+      Authorization: `token d93096ff3cd0b0a96722546e4269006ac4b5b2ae`,
     },
   })
     .then((response) => {
