@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic imports</title>
+  </head>
+  <body>
+    <nav class="c-nav">
+      <div class="c-nav__logo">
+        <a href="#" class="">Carlos Oliveira</a>
+      </div>
+      <ul class="c-nav__list">
+        <li><a href="#home" class="c-nav__nav-link">Home</a></li>
+        <li><a href="#sobre" class="c-nav__nav-link">Sobre</a></li>
+        <li><a href="#desafio" class="c-nav__nav-link">Desafio</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="c-home">
+      <div class="c-home__container">
+        <div class="c-home__box">
+          <h1 class="c-home__title">Desenvolvedor Front End</h1>
+          <p class="c-home__content">Desafio .com</p>
+        </div>
+        <div class="c-home__social-media">
+          <a href="#home" alt="Me siga no Facebook" target="_blank">
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/carlos-eoliveira/"
+            target="_blank"
+            title="Me siga no LinkedIn"
+          >
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a
+            href="https://github.com/caduol/"
+            target="_blank"
+            title="Me siga no GitHub"
+            ><i class="fab fa-github fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="c-sobre">
+      <div class="c-sobre__box">
+        <h1 class="c-sobre__title">Sobre</h1>
+        <p class="c-sobre__paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+        </p>
+        <p class="c-sobre__paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas atque
+          magnam, molestias blanditiis saepe explicabo architecto recusandae,
+          autem animi facilis fugit corrupti ipsam cupiditate quo pariatur non
+          ipsum quia voluptas. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Provident ipsam praesentium obcaecati sed, quae
+          eligendi corporis est voluptatibus iure enim alias id modi quibusdam
+          explicabo maxime laborum dolorem autem harum.
+        </p>
+        <p class="c-sobre__paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas atque
+          magnam, mapli molestias blanditiis saepe explicabo architecto
+          recusandae, autem animi facilis fugit corrupti ipsam cupiditate quo
+          pariatur non ipsum quia voluptas. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Provident ipsam praesentium obcaecati
+          sed, quae eligendi corporis est voluptatibus. Quas atque magnam,
+          molestias blanditiis saepe explicabo architecto recusandae, autem
+          animi facilis fugit corrupti ipsam cupiditate quo pariatur non ipsum
+          quia voluptas. Iure enim alias id enim alias id modi quibusdam
+          explicabo maxime laborum dolorem autem harum.
+        </p>
+        <p class="c-sobre__paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas atque
+          magnam, molestias blanditiis saepe explicabo architecto recusandae,
+          autem animi facilis fugit corrupti ipsam cupiditate quo pariatur non
+          ipsum quia voluptas. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Provident ipsam praesentium obcaecati sed, quae
+          eligendi corporis est voluptatibus. Quas atque magnam, molestias
+          blanditiis saepe explicabo architecto recusandae, autem animi facilis
+          fugit corrupti ipsam cupiditate quo pariatur non ipsum quia voluptas.
+          Iure enim alias id modi quibusdam explicabo maxime laborum dolorem
+          autem harum.
+        </p>
+      </div>
+    </section>
+    <section id="desafio" class="c-desafio">
+      <div class="c-desafio__container">
+        <h1 class="c-desafio__title">Desafio</h1>
+        <div class="c-desafio__box">
+          <div class="c-desafio__profile">
+            <img class="c-desafio__profile-img" />
+            <a href="#" class="c-desafio__link-profile" target="_blank"
+              >Visitar Perfil</a
+            >
+          </div>
+          <div class="c-desafio__data-repository">
+            <ul id="list-info"></ul>
+            <div class="c-desafio__btn-group">
+              <button id="list-respositories">
+                <span>Ver Repositórios</span> <i class="fas fa-spinner"></i>
+              </button>
+              <button id="list-favorites">
+                <span>Ver Favoritos</span> <i class="fas fa-spinner"></i>
+              </button>
+            </div>
+          </div>
+          <h3 id="title-list" class="c-desafio__title-list"></h3>
+          <ul id="data-list" class="c-desafio__data-list"></ul>
+        </div>
+      </div>
+    </section>
+    <div class="c-footer">
+      <div class="c-footer__info">
+        <p>Desafio Desenvolvedor Front Qconcursos.com</p>
+      </div>
+    </div>
+  </body>
+</html>

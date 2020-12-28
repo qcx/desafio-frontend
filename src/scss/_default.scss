@@ -1,0 +1,28 @@
+/*****************************************************
+  DEFAULT INITIAL 
+*****************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+}
+
+section {
+  height: 100vh;
+  max-width: 100%;
+}

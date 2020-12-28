@@ -1,0 +1,221 @@
+/*********************************************************************
+              ESTRUTURA DA SEÇÃO - DESAFIO
+*********************************************************************/
+
+.c-desafio {
+  position: relative;
+  background: #ebf6ee;
+  min-height: 100%;
+  height: 100vh;
+  padding-bottom: 40px;
+  @media screen and(max-width: 700px) {
+    min-height: 100vh;
+    height: auto;
+  }
+  @media screen and (max-width: 1680px) {
+    min-height: 80vh;
+    height: auto;
+  }
+
+  &__container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 840px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $title-size;
+    padding-top: 50px;
+    margin-bottom: 9%;
+    @media screen and(max-width: 600px) {
+      padding: 10px 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__box {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0px 2px 6px 5px rgba(117, 131, 121, 0.155);
+    box-shadow: 0px 2px 6px 5px rgba(117, 131, 121, 0.155);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+
+    .c-desafio__profile {
+      text-transform: uppercase;
+      margin: 0 auto;
+      height: 100%;
+      padding-right: 50px;
+      @media screen and(max-width: 600px) {
+        padding-right: 0px;
+      }
+      .c-desafio__profile-img {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 2px 2px 2px rgba(46, 46, 46, 0.155);
+        box-shadow: 1px 2px 2px 2px rgba(46, 46, 46, 0.155);
+        border: outset 3px #8eb899;
+      }
+      .c-desafio__link-profile {
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: $color-repository-info;
+        font-weight: bold;
+        letter-spacing: 2px;
+        @media screen and (max-width: 700px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .c-desafio__data-repository {
+      flex-grow: 2;
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        margin: 0;
+      }
+      ul {
+        li {
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: $color-repository-info;
+          line-height: 2;
+        }
+        @media screen and (max-width: 700px) {
+          margin-bottom: 30px;
+        }
+      }
+      .c-desafio__btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        button {
+          background: #fff;
+
+          color: #7eb68d;
+          white-space: normal;
+          font-weight: 600;
+          text-transform: uppercase;
+          width: 48%;
+          border: solid 2px #8eb899;
+          padding: 15px;
+
+          cursor: pointer;
+          transition: linear 0.3s;
+          &:last-child {
+            margin-right: 0px;
+          }
+          &:hover {
+            // border: solid 2px #8eb899;
+            background: #6c9276;
+            color: #fff;
+          }
+          @media screen and (max-width: 480px) {
+            width: 100%;
+            margin-bottom: 10px;
+            margin-right: 0px;
+          }
+
+          .svg-inline--fa {
+            position: relative;
+            left: 10px;
+            // padding-left: 30px;
+          }
+        }
+      }
+    }
+
+    .c-desafio__title-list {
+      color: #255733;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+    .c-desafio__data-list {
+      margin-top: 30px;
+      flex: 1 0 100%;
+      overflow: auto;
+      max-height: 300px;
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #f5f5f5;
+        &:nth-child(odd) {
+          background: #96d8a9;
+        }
+        span {
+          font-weight: 500;
+          .svg-inline--fa {
+            color: #275233;
+            margin-left: 10px;
+          }
+        }
+        &:hover {
+          background: #2ec44ed3;
+          cursor: pointer;
+          color: #fff;
+          .svg-inline--fa {
+            color: #e3f5e8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.c-footer {
+  background: #ebf6ee;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+
+  @media screen and (max-width: 780px) {
+    margin-top: 0px;
+  }
+  &__info {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.856);
+    color: rgb(202, 202, 202);
+    height: 120px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    padding: calc(4% + 10px);
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.fa-spinner {
+  -webkit-animation: loading 2s linear infinite;
+  -o-animation: loading 2s linear infinite;
+  animation: loading 2s linear infinite;
+}
+
+.fa-spinner {
+  display: none;
+}
