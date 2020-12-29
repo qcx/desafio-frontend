@@ -10,9 +10,6 @@ npm start
 
 <img alt="CQX" src="src/images/qcx.gif" />
 
-<a href="LICENSE" style="text-decoration: none">
-    <img alt="MIT - License" src="https://img.shields.io/github/license/caduol/desafio-frontend?color=%233DC57B">
-</a>
 
 <a href="https://github.com/caduol/desafio-frontend/" style="text-decoration: none">
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/caduol/desafio-frontend">
