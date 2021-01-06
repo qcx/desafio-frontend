@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4a008f;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+
+
+.home_challenge {
+  
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: rgb(204, 204, 204);
+  font-size: 0.8rem;
+  margin: 1.5rem;
+  box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+  
+}
+
+.perfil {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+.perfil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.challenge_data {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.challenge_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.challenge_search {
+  background-color: #590aa3;
+  padding: 1.5rem;
+  width: 40rem;
+  display: flex;
+  border-radius: 1.5rem;
+}
+
+.challenge_repositories {
+  background-color: #53029e;
+  
+  padding: 1.5rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge_title {
+  background-color: #590aa3;
+  border-radius: 1rem;
+  padding: 0.1rem;
+  width: 10rem;
+  
+}
+
+.list_repos {
+  background-color: #590aa3;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.list_repos a{
+  text-decoration: none;
+  color: white;
+}
+
+.list_repos a:hover{
+color: #c1576a;
+}
+
+#challenge_button{
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: #440183;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 2rem;
+  box-shadow:2px 2px 2px rgba(0,0,0,0.1);
+}
+
+#challenge_button a{
+  text-decoration: none;
+  color: rgb(208, 206, 206);
+}
+#challenge_button a:hover{
+  color: #c1576a;
+  }
+
+@media screen and (max-width: 768px) {
+ 
+  .home_challenge {
+    background-color: var(--first-color);
+    width: auto;
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .challenge_search {
+    height: 80vh;
+    background-color: #590aa3;
+    padding: 1.5rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .challenge_repositories {
+    background-color: #53029e;
+    
+    padding: 1rem;
+    width:15rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 15rem;
+    
+  }
+
+
+  .list_repos {
+    background-color: #590aa3;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;   
+  }
+
+
+
+  .perfil {
+    background-color: #53029e;
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    padding: 1rem;
+  }
+  .perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  
+}
+
+@media (min-width: 1024px) {
+ 
+}
