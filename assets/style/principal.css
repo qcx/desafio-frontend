@@ -1,0 +1,47 @@
+.principal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), 
+        url(/public/img/bg-computer-coffee.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; /* efeito parallax */
+    min-height: 600px;
+    height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-heading {
+    text-align: center;
+    
+}
+
+.principal-heading h1 {
+    font-size: 4.2em;
+    color: var(--white-text);
+}
+
+.principal-heading h2 {
+    font-size: 3em;
+    color: var(--white-text);
+    font-weight: 600;
+}
+
+.social-media {
+    font-size: 4em;
+    position: absolute;
+    color: orange;
+    margin: 0 auto;
+    bottom: 50px;
+}
+
+.fa-facebook-square, .fa-linkedin, .fa-github-square {
+    color: rgba(250, 250, 250,.6);
+}
+
+.fa-facebook-square, .fa-linkedin {
+    margin-right: 20px;
+}
