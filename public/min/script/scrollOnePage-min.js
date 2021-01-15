@@ -1,0 +1,1 @@
+const menuItems=document.querySelectorAll('nav a[href^="#"]');function scrollToId(o){o.preventDefault(),scrollToPosition(getScroll(o.target))}function scrollToPosition(o){window.scroll({top:o,behavior:"smooth"})}function getScroll(o){const t=o.getAttribute("href");return document.querySelector(t).offsetTop}menuItems.forEach(o=>{o.addEventListener("click",scrollToId)});

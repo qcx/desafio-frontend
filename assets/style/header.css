@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 50px;
+}
+
+.header h1, .header nav a {
+    font-size: 2em;
+}
+
+.header h1 {
+    color: var(--white-text);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: var(--white-text);
+    margin-right: 50px;
+}
+
+.header nav a:nth-child(3) {
+    margin-right: 0;
+}
+
+@media (max-width: 574px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        color:red;
+        padding: 10px 0px;
+    }
+
+    .header h1, .header nav a {
+        font-size: 2.6em;
+    }
+}

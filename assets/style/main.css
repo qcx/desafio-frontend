@@ -1,0 +1,27 @@
+:root {
+    --footer-color: #373737;
+    --white-text: #e6e6e6;
+    --black-text: #050505;
+    --bg-about: #fafafa;
+    --bg-challenge: #EBF6EE;
+    --btn-border-color: #B8DFC6;
+    --dark-green: #52996d;
+    --darker-green: #316444;
+    --bg-repository: #fdfdfd;
+    font-size: 62.5%; /* 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black-text);
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}

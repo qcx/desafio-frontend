@@ -1,0 +1,26 @@
+.about {
+    background-color: var(--bg-about);
+    padding: 50px 150px; 
+}
+
+.about p {
+    font-size: 1.6em;
+}
+
+@media (max-width: 574px) {
+    .about {
+        padding: 50px 30px;
+    }
+    .about p {
+        font-size: 2.1em;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 890px) {
+    .about {
+        padding: 50px 40px;
+    }
+    .about p {
+        font-size: 2.2em;
+    }
+}
